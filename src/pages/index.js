@@ -2,10 +2,12 @@ import Layout from '@/components/Layout'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Image from 'next/image'
-import profilePic from '../../public/images/profile/portfolio-image.jpg'
+import profilePic from '../../public/images/profile/developer-avatar.png'
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
+import HireMe from '@/components/HireMe'
+import lighBulb from '../../public/images/svgs/miscellanous.svg'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +23,7 @@ export default function Home() {
         <Layout className='pt-0'>
           <div className='flex items-center justify-between w-full'>
             <div className='w-1/2'>
-              <Image src={profilePic} alt="CodeBucks" className='w-full h-auto'/>
+              <Image src={profilePic} alt="CodeGef" className='w-full h-auto'/>
             </div>
             <div className='w-1/2 flex flex-col items-center self-center'>
               
@@ -41,6 +43,10 @@ export default function Home() {
           </div>
           
         </Layout>
+        <HireMe />
+        <div className='absolute right-8 bottom-8 inline-block w-24'>
+          <Image src={lighBulb} alt="CodeGef" className='w-full h-auto'/>
+        </div>
       </main>
     </>
 
