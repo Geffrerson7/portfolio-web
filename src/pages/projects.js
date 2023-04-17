@@ -11,6 +11,7 @@ import playlistsImg from '../../public/images/projects/playlists-api.png'
 import moviesImg from '../../public/images/projects/movies-api.png'
 import portfolioDjangoImg from '../../public/images/projects/django-portfolio.png'
 import inventorySystemImg from '../../public/images/projects/inventory-sys.png'
+import rickAndMortyImg from '../../public/images/projects/rick-and-morty-app.png'
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     return (
@@ -80,7 +81,7 @@ const projects = () => {
                                 title="Airline check-in"
                                 img={airlineImg}
                                 summary="It is a REST API with a single endpoint that allows querying by flight ID and returns the simulation of an automatic check-in for passengers of Andes Airlines."
-                                link="/"
+                                link="/airlineCheckIn"
                                 github="https://github.com/Geffrerson7/airline-check-in"
                                 type="Featured Project"
                             />
@@ -115,6 +116,16 @@ const projects = () => {
                                 users I used JWT and for API documentation I used Postman."
                                 link="/"
                                 github="https://github.com/Geffrerson7/APP-MOVIES"
+                                type="Featured Project"
+                            />
+                        </div>
+                        <div className='col-span-12'>
+                            <FeaturedProject
+                                title="RICK AND MORTY APP"
+                                img={rickAndMortyImg}
+                                summary="This is an application that displays data on the characters from the Rick and Morty series, including pagination, and also shows data on characters that appear in a specific episode. It's designed using Flask, Python, MongoDB, HTML, and Bootstrap."
+                                link="/"
+                                github="https://github.com/Geffrerson7/FLASK-APP-RICK-AND-MORTY"
                                 type="Featured Project"
                             />
                         </div>
