@@ -10,7 +10,7 @@ const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null)
     const motionValue = useMotionValue(0)
     const springValue = useSpring(motionValue, { duration: 3000 })
-    const isInView = useInView(ref ,{once:true})
+    const isInView = useInView(ref, { once: true })
 
     useEffect(() => {
         if (isInView) {
@@ -31,7 +31,7 @@ const AnimatedNumbers = ({ value }) => {
 
 const username = 'Geffrerson7';
 const url = `https://api.github.com/users/${username}/repos`;
-let numRepos;
+let numRepos=0;
 
 async function getNumRepos() {
     try {
@@ -46,7 +46,7 @@ async function getNumRepos() {
 getNumRepos().then(() => { });
 
 const url2 = `https://api.github.com/users/${username}/followers`;
-let numFollowers;
+let numFollowers=0;
 
 async function getNumFollowers() {
     try {
@@ -65,7 +65,7 @@ const about = () => {
         <>
             <Head>
                 <title>Gefferson | About Page</title>
-                <meta name='description' content='any description' />
+                <meta name='description' content='profile information' />
             </Head>
             <main className='flex w-full flex-col items-center justify-center'>
                 <Layout className='pt-16'>
@@ -85,26 +85,7 @@ const about = () => {
                                 and am looking for a full-time position where I can help a company achieve their
                                 goals.
                             </p>
-                            <br />
-                            <div className='flex flex-col items-center justify-center'>
-                                <span className='inline-block text-7xl font-bold'>
-                                    <AnimatedNumbers value={`${numRepos}`} />
-                                </span>
-                                <h2 className='text-xl font-medium capitalize text-dark/75'>
-                                    GitHub repositories
-                                </h2>
-                            </div>
-                            <br />
-                            <div className='flex flex-col items-center justify-center'>
-                                <span className='inline-block text-7xl font-bold'>
-                                    <AnimatedNumbers value={`${numFollowers}`} />
-                                </span>
-                                <h2 className='text-xl font-medium capitalize text-dark/75'>
-                                    GitHub followers
-                                </h2>
-                            </div>
                         </div>
-
                         <div className='col-span-3 flex flex-col items-center justify-between'>
                             <div className='flex flex-col'>
                                 <p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=Geffrerson7&show_icons=true&locale=en&layout=compact" alt="Geffrerson7" /></p>
@@ -115,17 +96,29 @@ const about = () => {
                             <div className='flex flex-col'>
                                 <p align="center">&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=Geffrerson7&" alt="Geffrerson7" /></p>
                             </div>
-                            <div className='flex flex-col'>
-                                <p align="center">&nbsp;<img src="https://github-readme-stats.vercel.app/api/wakatime?username=gcasasolah" alt="Geffrerson7" /></p>
-                            </div>
-
                         </div>
                         <div className='col-span-2 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
                             <div className='absolute top-0 -right-3 -z-10 w-[%102] h-[%103] rounded-[2rem] bg-dark' />
                             <Image src={profilePhoto} alt="CodeGef" className='w-full h-auto rounded-2xl' />
-
+                            <br />
+                        <div className='flex flex-col items-center justify-center'>
+                            <span className='inline-block text-7xl font-bold'>
+                                <AnimatedNumbers value={`${numRepos}`} />
+                            </span>
+                            <h2 className='text-xl font-medium capitalize text-dark/75'>
+                                GitHub repositories
+                            </h2>
                         </div>
-
+                        <br />
+                        <div className='flex flex-col items-center justify-center'>
+                            <span className='inline-block text-7xl font-bold'>
+                                <AnimatedNumbers value={`${numFollowers}`} />
+                            </span>
+                            <h2 className='text-xl font-medium capitalize text-dark/75'>
+                                GitHub followers
+                            </h2>
+                        </div>
+                        </div>
                     </div>
                 </Layout>
 
