@@ -6,6 +6,7 @@ import response200Img from '../../public/images/projects/response_200.png'
 import response404and400Img from '../../public/images/projects/response_404_400.png'
 import Image from 'next/image';
 
+
 const airlineCheckIn = () => {
     const ref = useRef(null);
     const { scrollyPogress } = useScroll({
@@ -13,7 +14,7 @@ const airlineCheckIn = () => {
         offset: ["start end", "center start"]
     })
     return (
-        <div className='my-32'>
+        <div className='my-32 dark:text-light'>
             <h2 className='font-bold text-8xl mb-32 w-full text-center'>
                 Airline Check-In
             </h2>
@@ -61,24 +62,24 @@ const airlineCheckIn = () => {
 
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <Features
-                    name="One endpoint"
-                    info="This project has a single end point that allows query for the flight ID and return the simulation." 
+                        name="One endpoint"
+                        info="This project has a single end point that allows query for the flight ID and return the simulation."
                     />
                     <Features
-                    name="Field API response"
-                    info="The fields in the database are named in Snake case, but in the API response they should be transformed to Camel case." 
+                        name="Field API response"
+                        info="The fields in the database are named in Snake case, but in the API response they should be transformed to Camel case."
                     />
                     <Features
-                    name="Reconnection to the database"
-                    info="The API reconnects to the database when the database connection has been inactive for more than 5 seconds." 
+                        name="Reconnection to the database"
+                        info="The API reconnects to the database when the database connection has been inactive for more than 5 seconds."
                     />
                     <Features
-                    name="API response"
-                    info="The API only gives three types of response: Succesfully response, flight not found and error response" 
+                        name="API response"
+                        info="The API only gives three types of response: Succesfully response, flight not found and error response"
                     />
                     <div className='w-full flex flex-col items-end'>
-                        <Image src={response200Img} className='w-25 h-25 rounded-2xl'/>
-                        <Image src={response404and400Img} className='w-25 h-25 mt-8 rounded-2xl'/>
+                        <Image src={response200Img} className='w-25 h-25 rounded-2xl' />
+                        <Image src={response404and400Img} className='w-25 h-25 mt-8 rounded-2xl' />
                     </div>
                 </ul>
             </div>

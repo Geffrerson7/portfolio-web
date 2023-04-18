@@ -1,5 +1,5 @@
 import AnimatedText from '@/components/AnimatedText'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
@@ -29,38 +29,39 @@ const AnimatedNumbers = ({ value }) => {
     return <span ref={ref}></span>
 }
 
-const username = 'Geffrerson7';
-const url = `https://api.github.com/users/${username}/repos`;
-let numRepos=0;
-
-async function getNumRepos() {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        numRepos = data.length;
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-getNumRepos().then(() => { });
-
-const url2 = `https://api.github.com/users/${username}/followers`;
-let numFollowers=0;
-
-async function getNumFollowers() {
-    try {
-        const response = await fetch(url2);
-        const data = await response.json();
-        numFollowers = data.length;
-    } catch (error) {
-        console.error(error);
-    }
-}
-
-getNumFollowers().then(() => { });
-
 const about = () => {
+    const [numRepos, setNumRepos] = useState(0);
+    const [numFollowers, setNumFollowers] = useState(0);
+
+    const username = 'Geffrerson7';
+    const url = `https://api.github.com/users/${username}/repos`;
+    const url2 = `https://api.github.com/users/${username}/followers`;
+
+    async function getNumRepos() {
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            setNumRepos(data.length);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    async function getNumFollowers() {
+        try {
+            const response = await fetch(url2);
+            const data = await response.json();
+            setNumFollowers(data.length);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    useEffect(() => {
+        getNumRepos();
+        getNumFollowers();
+    }, []);
+    
     return (
         <>
             <Head>
@@ -101,23 +102,23 @@ const about = () => {
 
                             <Image src={profilePhoto} alt="CodeGef" className='w-full h-auto rounded-2xl' />
                             <br />
-                        <div className='flex flex-col items-center justify-center'>
-                            <span className='inline-block text-7xl font-bold'>
-                                <AnimatedNumbers value={`${numRepos}`} />
-                            </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>
-                                GitHub repositories
-                            </h2>
-                        </div>
-                        <br />
-                        <div className='flex flex-col items-center justify-center'>
-                            <span className='inline-block text-7xl font-bold'>
-                                <AnimatedNumbers value={`${numFollowers}`} />
-                            </span>
-                            <h2 className='text-xl font-medium capitalize text-dark/75'>
-                                GitHub followers
-                            </h2>
-                        </div>
+                            <div className='flex flex-col items-center justify-center'>
+                                <span className='inline-block text-7xl font-bold'>
+                                    <AnimatedNumbers value={`${numRepos}`} />
+                                </span>
+                                <h2 className='text-xl font-medium capitalize text-dark/75'>
+                                    GitHub repositories
+                                </h2>
+                            </div>
+                            <br />
+                            <div className='flex flex-col items-center justify-center'>
+                                <span className='inline-block text-7xl font-bold'>
+                                    <AnimatedNumbers value={`${numFollowers}`} />
+                                </span>
+                                <h2 className='text-xl font-medium capitalize text-dark/75'>
+                                    GitHub followers
+                                </h2>
+                            </div>
                         </div>
                     </div>
                 </Layout>
