@@ -9,8 +9,8 @@ const Technologies = ({name, version, url, description}) => {
     <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
         <LiIcon reference={ref}/>
         <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}}>
-            <h3 className='capitalize font-bold text-2xl'>{name}&nbsp;<a href={url} target='_blank' className='text-primary capitalize'>&#40;Source&#41;</a></h3>
-            <span className='capitalize font-medium text-dark/75'>Version: {version}</span>
+            <h3 className='capitalize font-bold text-2xl'>{name}&nbsp;<a href={url} target='_blank' className='text-primary dark:text-primaryDark capitalize'>&#40;Source&#41;</a></h3>
+            <span className='capitalize font-medium text-dark/75 dark:text-light/75'>Version: {version}</span>
             <p className='font-medium w-full'>{description}</p>
         </motion.div>
     </li>

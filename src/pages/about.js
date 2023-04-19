@@ -68,12 +68,12 @@ const about = () => {
                 <title>Gefferson | About Page</title>
                 <meta name='description' content='profile information' />
             </Head>
-            <main className='flex w-full flex-col items-center justify-center'>
+            <main className='flex w-full flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText text="Simplify people&#39;s work creatively through programming so that they can save time and money!" className='mb-16' />
                     <div className='grid w-full grid-cols-8 gap-16'>
                         <div className='col-span-3 flex flex-col items-start justify-start'>
-                            <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
+                            <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>Biography</h2>
                             <p className='font-medium'>
                                 Hello! I&#39;m Gefferson. I&#39;m a junior programmer who loves to build things with code.
                                 My first experience with programming was when I was 22 years old at university while I was
@@ -98,24 +98,24 @@ const about = () => {
                                 <p align="center">&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=Geffrerson7&" alt="Geffrerson7" /></p>
                             </div>
                         </div>
-                        <div className='col-span-2 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
-
+                        <div className='col-span-2 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light'>
+                        <div  className='absolute top-0 -right-3 -z-10 w-[103%] h-[103%] rounded-[2rem] bg-dark dark:bg-light'/>
                             <Image src={profilePhoto} alt="CodeGef" className='w-full h-auto rounded-2xl' />
                             <br />
                             <div className='flex flex-col items-center justify-center'>
                                 <span className='inline-block text-7xl font-bold'>
-                                    <AnimatedNumbers value={`${numRepos}`} />
+                                    <AnimatedNumbers value={numRepos} />
                                 </span>
-                                <h2 className='text-xl font-medium capitalize text-dark/75'>
+                                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light'>
                                     GitHub repositories
                                 </h2>
                             </div>
                             <br />
                             <div className='flex flex-col items-center justify-center'>
                                 <span className='inline-block text-7xl font-bold'>
-                                    <AnimatedNumbers value={`${numFollowers}`} />
+                                    <AnimatedNumbers value={numFollowers} />
                                 </span>
-                                <h2 className='text-xl font-medium capitalize text-dark/75'>
+                                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light'>
                                     GitHub followers
                                 </h2>
                             </div>

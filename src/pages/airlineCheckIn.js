@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const airlineCheckIn = () => {
     const ref = useRef(null);
-    const { scrollyPogress } = useScroll({
+    const { scrollyProgress } = useScroll({
         target: ref,
         offset: ["start end", "center start"]
     })
@@ -20,7 +20,7 @@ const airlineCheckIn = () => {
             </h2>
             <h3 className='font-bold text-4xl mb-16 w-full text-center'>TECHNOLOGIES</h3>
             <div ref={ref} className='w-[75%] mx-auto relative'>
-                <motion.div style={{ scaleY: scrollyPogress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top' />
+                <motion.div style={{ scaleY: scrollyProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light' />
 
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <Technologies
@@ -58,7 +58,7 @@ const airlineCheckIn = () => {
 
             <h3 className='font-bold text-4xl mb-16 mt-16 w-full text-center'>FEATURES</h3>
             <div ref={ref} className='w-[75%] mx-auto relative'>
-                <motion.div style={{ scaleY: scrollyPogress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top' />
+                <motion.div style={{ scaleY: scrollyProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light' />
 
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <Features
