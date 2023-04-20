@@ -81,7 +81,7 @@ const airlineCheckIn = () => {
                     <div className='w-full flex flex-col items-center md:text-small sm:text-xs md:text-center sm:text-center'>
                         <p>Succesfully response</p>
                         <PopUpModal srcImg={response200Img} description="Succesfully response"/>
-                        <p className='mt-8'>Flight not found and error response</p>
+                        <p className='mt-32 xl:mt-16'>Flight not found and error response</p>
                         <PopUpModal srcImg={response404and400Img} description="Flight not found and error response"/>
                     </div>
                 </ul>

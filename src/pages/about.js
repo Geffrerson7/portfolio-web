@@ -71,7 +71,7 @@ const about = () => {
             <main className='flex w-full flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText text="Simplify people&#39;s work creatively through programming so that they can save time and money!" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
-                    <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
+                    <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 xl:grid-cols-5'>
                         <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-5'>
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>Biography</h2>
                             <p className='font-medium'>
