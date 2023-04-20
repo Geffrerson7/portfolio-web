@@ -8,7 +8,7 @@ import Image from 'next/image';
 import PopUpModal from '@/components/PopUpModal';
 
 
-const airlineCheckIn = () => {
+const AirlineCheckIn = () => {
     const ref = useRef(null);
     const { scrollyProgress } = useScroll({
         target: ref,
@@ -90,4 +90,4 @@ const airlineCheckIn = () => {
     )
 }
 
-export default airlineCheckIn
+export default AirlineCheckIn
