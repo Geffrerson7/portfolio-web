@@ -107,7 +107,7 @@ const About = () => {
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
 
-                            <div className='flex flex-col items-center justify-center xl:col-span-8 xl:items-center mt-4'>
+                            <div className='flex flex-col items-center justify-center text-center xl:col-span-8 xl:items-center mt-4'>
                                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                                     <AnimatedNumbers value={numRepos} />
                                 </span>
@@ -116,7 +116,7 @@ const About = () => {
                                 </h2>
                             </div>
 
-                            <div className='flex flex-col items-center justify-center xl:items-center mt-4'>
+                            <div className='flex flex-col items-center justify-center text-center xl:items-center mt-4'>
                                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
                                     <AnimatedNumbers value={numFollowers} />
                                 </span>
