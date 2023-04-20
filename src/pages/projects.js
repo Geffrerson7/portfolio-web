@@ -95,7 +95,7 @@ const projects = () => {
                                 title="Airline check-in"
                                 img={airlineImg}
                                 summary="It is a REST API with a single endpoint that allows querying by flight ID and returns the simulation of an automatic check-in for passengers of Andes Airlines."
-                                link="/airlineCheckIn"
+                                link="/AirlineCheckIn"
                                 github="https://github.com/Geffrerson7/airline-check-in"
                                 type="Featured Project"
                             />

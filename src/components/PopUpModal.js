@@ -12,7 +12,7 @@ const PopUpModal = ({ srcImg, description }) => {
             {showModal ?
                 (
                     <div className='mt-1 flex justify-center items-center flex-col w-auto rounded-lg shadow-xl h-auto p-2 dark:bg-light md:w-[50%] md:h-[50%] lg:w-[75%] lg:h-[75%]'>
-                        <Image src={srcImg} />
+                        <Image src={srcImg} alt="CodeGef"/>
                         <h2 className='text-base mt-2 mx-4 text-primary font semibold text-center md:text-small sm:text-xs md:text-center sm:text-center'>{description}</h2>
                         <button className='my-5 w-auto px-8 h-10 bg-blue-600 text-white rounded-md shadow hover:shadow-lg font-semibold md:h-5 md:px-4 md:text-small sm:text-xs md:text-center sm:text-center'
                             onClick={() => setShowModal(false)}>Close</button>

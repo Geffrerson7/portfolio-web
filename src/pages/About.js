@@ -91,13 +91,13 @@ const about = () => {
                         </div>
                         <div className='col-span-3 flex flex-col items-center justify-between xl:col-span-5'>
                             <div className='flex flex-col'>
-                                <p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=Geffrerson7&show_icons=true&locale=en&layout=compact" alt="Geffrerson7" /></p>
+                                <p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=Geffrerson7&show_icons=true&locale=en&layout=compact" alt="Geffrerson7"/></p>
                             </div>
                             <div className='flex flex-col'>
-                                <p align="center" >&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=Geffrerson7&show_icons=true&locale=en" alt="Geffrerson7" /></p>
+                                <p align="center" >&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=Geffrerson7&show_icons=true&locale=en" alt="Geffrerson7"/></p>
                             </div>
                             <div className='flex flex-col'>
-                                <p align="center">&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=Geffrerson7&" alt="Geffrerson7" /></p>
+                                <p align="center">&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=Geffrerson7&" alt="Geffrerson7"/></p>
                             </div>
                         </div>
                         <div className='col-span-2 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-5'>
