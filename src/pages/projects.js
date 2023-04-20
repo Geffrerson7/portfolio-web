@@ -14,18 +14,19 @@ import inventorySystemImg from '../../public/images/projects/inventory-sys.png'
 import rickAndMortyImg from '../../public/images/projects/rick-and-morty-app.png'
 import lambdaFunctionImg from '../../public/images/projects/lambda-function.png'
 import { motion } from 'framer-motion'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const FramerImage = motion(Image)
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     return (
         <article className='w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
-            <div  className='absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'  />
+            <div className='absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]' />
             <Link href={link} target="_blank" className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
-                <FramerImage src={img} alt={title} className='w-full h-auto' 
-                whileHover={{scale:1.05}} transition={{duration:0.2}}
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                <FramerImage src={img} alt={title} className='w-full h-auto'
+                    whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
             </Link>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
@@ -51,10 +52,10 @@ const Project = ({ type, title, summary, img, link, github }) => {
 
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4'>
-            <div  className='absolute top-0 -right-2.5 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] md:h-[101%] xs-rounded-[1.5rem]'  />
+            <div className='absolute top-0 -right-2.5 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] md:h-[101%] xs-rounded-[1.5rem]' />
             <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                <FramerImage src={img} alt={title} className='w-full h-auto' 
-                whileHover={{scale:1.05}} transition={{duration:0.2}}
+                <FramerImage src={img} alt={title} className='w-full h-auto'
+                    whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}
                 />
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -84,6 +85,7 @@ const projects = () => {
                 <title>Gefferson | Projects Page</title>
                 <meta name='description' content='projects information' />
             </Head>
+            <TransitionEffect />
             <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText text="Check out my GitHub projects" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />

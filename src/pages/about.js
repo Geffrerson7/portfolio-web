@@ -5,6 +5,7 @@ import Layout from '@/components/Layout'
 import Image from 'next/image'
 import profilePhoto from '../../public/images/profile/gefferson-casasola.png'
 import { useMotionValue, useSpring, useInView } from 'framer-motion'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null)
@@ -68,6 +69,7 @@ const about = () => {
                 <title>Gefferson | About Page</title>
                 <meta name='description' content='profile information' />
             </Head>
+            <TransitionEffect />
             <main className='flex w-full flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText text="Simplify people&#39;s work creatively through programming so that they can save time and money!" className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
