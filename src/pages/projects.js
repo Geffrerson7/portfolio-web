@@ -105,7 +105,7 @@ const projects = () => {
                                 title="Services Payments API"
                                 img={servicePaymentsImg}
                                 summary="Streaming service payment API. It has the functionalities of creating payments and automatically registering if it is expired, creating and updating streaming services, and creating a user with a profile picture."
-                                link="/"
+                                link="/ServicesPaymentsAPI"
                                 github="https://github.com/Geffrerson7/DJANGO-PAYMENTS-API"
                                 type="Featured Project"
                             />
