@@ -116,7 +116,7 @@ const projects = () => {
                                 img={playlistsImg}
                                 summary="It is an API that creates, lists and updates song playlists and songs in public or private mode for authenticated users. It also has the functionality to create and list users and login.
                                 This app was built using TypeScript, Express, Prisma and PostgreSQL.For authentication users we used JWT and for API documentation I used Postman."
-                                link="/"
+                                link="/PlaylistAPI"
                                 github="https://github.com/Geffrerson7/PLAYLIST-API"
                                 type="Featured Project"
                             />
