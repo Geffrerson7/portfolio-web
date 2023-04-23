@@ -6,6 +6,7 @@ import Image from 'next/image'
 import profilePhoto from '../../public/images/profile/gefferson-casasola.png'
 import { useMotionValue, useSpring, useInView } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
+import Volunteering from '@/components/Volunteering'
 
 const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null)
@@ -126,8 +127,8 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+                <Volunteering />
                 </Layout>
-
             </main>
         </>
     )
