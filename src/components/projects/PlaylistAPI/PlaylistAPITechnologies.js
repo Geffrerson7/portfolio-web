@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import Technologies from '@/components/Technologies';
 
-const PlaylistTechnologies = () => {
+const PlaylistAPITechnologies = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -47,7 +47,7 @@ const PlaylistTechnologies = () => {
                     <Technologies
                         name="JSON web tokens"
                         version="9.0.0"
-                        url="https://www.npmjs.com/package/dotenv"
+                        url="https://www.npmjs.com/package/jsonwebtoken"
                         description="JSON Web Tokens (JWT) is a widely used standard for creating secure and stateless authentication tokens in web applications. JWTs are digitally signed and contain a compact and self-contained payload that can store various pieces of information, such as user ID, expiration time, and other data related to authentication and authorization."
                     />
                     <Technologies
@@ -62,4 +62,4 @@ const PlaylistTechnologies = () => {
     )
 }
 
-export default PlaylistTechnologies
+export default PlaylistAPITechnologies

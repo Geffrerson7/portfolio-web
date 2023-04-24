@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import Features from '@/components/Features';
 
-const PlaylistFeatures = () => {
+const MoviesAPIFeatures = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -19,8 +19,8 @@ const PlaylistFeatures = () => {
                         info="This authentication is performed by verifying the tokens generated during user login."
                     />
                     <Features
-                        name="Private songs"
-                        info="To view public songs, user authentication will not be required, but for private songs it will be necessary."
+                        name="User role"
+                        info="ANONYMOUS or unauthenticated users do not have access to the service endpoints, but regular users and ADMIN do have access to the service endpoints."
                     />
                     <Features
                         name="Password encryption"
@@ -28,7 +28,7 @@ const PlaylistFeatures = () => {
                     />
                     <Features
                         name="API response"
-                        info="The API will have endpoints for user creation, user login, listing all users, creating songs, listing all songs, listing a song, creating playlists, updating playlists, and listing all playlists created by a user."
+                        info="The API has endpoints for creating a record, listing all records, listing a record by ID, and updating a record by ID for users, movies, movie rentals, movie copies, and clients."
                     />
                 </ul>
             </div>
@@ -36,4 +36,4 @@ const PlaylistFeatures = () => {
     )
 }
 
-export default PlaylistFeatures
+export default MoviesAPIFeatures

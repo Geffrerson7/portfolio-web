@@ -5,7 +5,7 @@ import response200Img from '../../../../public/images/projects/response_200.png'
 import response404and400Img from '../../../../public/images/projects/response_404_400.png'
 import PopUpModal from '@/components/PopUpModal';
 
-const AirlineFeatures = () => {
+const AirlineCheckInFeatures = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -46,4 +46,4 @@ const AirlineFeatures = () => {
     )
 }
 
-export default AirlineFeatures
+export default AirlineCheckInFeatures

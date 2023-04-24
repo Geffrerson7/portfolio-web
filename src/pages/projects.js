@@ -123,12 +123,12 @@ const projects = () => {
                         </div>
                         <div className='col-span-12'>
                             <FeaturedProject
-                                title="MOVIES API"
+                                title="Movies API"
                                 img={moviesImg}
                                 summary="This app was built using TypeScript, Express, Prisma and PostgreSQL.
                                 You are able to create users, clients, movies and movies copy. For authentication
                                 users I used JWT and for API documentation I used Postman."
-                                link="/"
+                                link="/MoviesAPI"
                                 github="https://github.com/Geffrerson7/APP-MOVIES"
                                 type="Featured Project"
                             />

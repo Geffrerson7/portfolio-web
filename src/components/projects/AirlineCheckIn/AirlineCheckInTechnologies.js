@@ -3,7 +3,7 @@ import { motion, useScroll } from 'framer-motion'
 import Technologies from '@/components/Technologies';
 
 
-const AirlineTechnologies = () => {
+const AirlineCheckInTechnologies = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -52,5 +52,5 @@ const AirlineTechnologies = () => {
     )
 }
 
-export default AirlineTechnologies
+export default AirlineCheckInTechnologies
 
