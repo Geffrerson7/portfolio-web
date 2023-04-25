@@ -138,7 +138,7 @@ const projects = () => {
                                 title="RICK AND MORTY APP"
                                 img={rickAndMortyImg}
                                 summary="This is an application that displays data on the characters from the Rick and Morty series, including pagination, and also shows data on characters that appear in a specific episode. It's designed using Flask, Python, MongoDB, HTML, and Bootstrap."
-                                link="/"
+                                link="/RickAndMorty"
                                 github="https://github.com/Geffrerson7/FLASK-APP-RICK-AND-MORTY"
                                 type="Featured Project"
                             />

@@ -6,7 +6,7 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
-import lightBulb from '../../public/images/svgs/miscellanous.svg'
+import lightBulb from '../../public/images/svgs/robocat.svg'
 import TransitionEffect from '@/components/TransitionEffect'
 
 
