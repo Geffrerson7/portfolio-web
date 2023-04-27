@@ -152,7 +152,7 @@ const projects = () => {
                                 You are able to create users, clients, suppliers, products, categories and orders. Also authenticated 
                                 users will have access to private songs. For authentication
                                 users we used JWT."
-                                link="/"
+                                link="/InventorySystem"
                                 github="https://github.com/Geffrerson7/Proyecto-Unidad-8-Back"
                                 type="Project"
                             />
