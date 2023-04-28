@@ -164,7 +164,7 @@ const projects = () => {
                                 summary="It is a portfolio where you can view and add your programming projects.
                                 The Back End part was done with Django and the Front End part was done
                                 with Bootstrap and a free template."
-                                link="/"
+                                link="/DjangoPortfolio"
                                 github="https://github.com/Geffrerson7/PORTFOLIO-DJANGO"
                                 type="Project"
                             />
