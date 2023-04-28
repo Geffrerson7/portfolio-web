@@ -174,7 +174,7 @@ const projects = () => {
                                 title="Mercadopago Lambda function"
                                 img={lambdaFunctionImg}
                                 summary="Lambda function for an endpoint that creates a payment with the MercadoPago library in Python, using AWS Lambda and API Gateway services."
-                                link="/"
+                                link="/LambdaFunction"
                                 github="https://github.com/Geffrerson7/Lambda-function-U6"
                                 type="Project"
                             />

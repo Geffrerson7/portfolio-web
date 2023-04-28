@@ -2,7 +2,8 @@ import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import Features from '@/components/Features';
 
-const DjangoPortfolioFeatures = () => {
+
+const LambdaFunctionFeatures = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -15,20 +16,12 @@ const DjangoPortfolioFeatures = () => {
                 <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]' />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Features
-                        name="Project CRUD"
-                        info="The application has the functionality to list, create, update, and delete portfolio projects."
+                        name="Payment creation"
+                        info="This is a lambda function for creating online payments using the MercadoPago SDK."
                     />
                     <Features
-                        name="User role"
-                        info="Unauthenticated users can&#39;t create, update, or delete portfolio projects, but authenticated users can."
-                    />
-                    <Features
-                        name="Visitor IP saving"
-                        info="The application records the IP address in the project portfolio visitors&#39; database. This is done for every visit to the web page."
-                    />
-                    <Features
-                        name="Project model"
-                        info="The project model has fields for title, description, tags, image URL, and GitHub URL."
+                        name="API REST"
+                        info="The lambda function is used in the endpoint of a REST API created with AWS Lambda and API Gateway services."
                     />
                 </ul>
             </div>
@@ -36,4 +29,4 @@ const DjangoPortfolioFeatures = () => {
     )
 }
 
-export default DjangoPortfolioFeatures
+export default LambdaFunctionFeatures
