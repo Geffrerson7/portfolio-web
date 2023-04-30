@@ -7,6 +7,7 @@ import profilePhoto from '../../public/images/profile/gefferson-casasola.png'
 import { useMotionValue, useSpring, useInView } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import Volunteering from '@/components/Volunteering'
+import Education from '@/components/Education'
 
 const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null)
@@ -77,7 +78,7 @@ const About = () => {
                     <div className='grid w-full grid-cols-8 gap-16 sm:gap-8 xl:grid-cols-5'>
                         <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-5'>
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>Biography</h2>
-                            <p className='font-medium'>
+                            <p className='font-medium text-justify'>
                                 Hello! I&#39;m Gefferson. I&#39;m a junior programmer who loves to build things with code.
                                 My first experience with programming was when I was 22 years old at university while I was
                                 studying electronic engineering, but it didn&#39;t last long: I was a big fan of video games,
@@ -127,6 +128,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+                <Education />
                 <Volunteering />
                 </Layout>
             </main>

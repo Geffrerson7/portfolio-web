@@ -2,6 +2,8 @@ import React from 'react'
 import { motion, useScroll } from 'framer-motion'
 import { useRef } from 'react'
 import LiIcon from './LiIcon'
+import Image from 'next/image'
+import volunteeringPhoto from '../../public/images/profile/volunteering.png'
 
 const Details = ({ position, organization, organizationLink, time, address, work }) => {
     const ref = useRef(null);
@@ -13,7 +15,7 @@ const Details = ({ position, organization, organizationLink, time, address, work
                 <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
                     {time} | {address}
                 </span>
-                <p className='font-medium w-full md:text-sm'>
+                <p className='font-medium w-full md:text-sm text-justify'>
                     {work}
                 </p>
             </motion.div>
@@ -33,6 +35,15 @@ const Volunteering = () => {
             <h2 className='font-bold text-8xl mb-32 text-center md:text-3xl xs:text-2xl md:mb-8'>
                 Volunteering
             </h2>
+            <div className='mb-8'>
+                <Image 
+                src={volunteeringPhoto} 
+                alt='education' 
+                className='mx-auto h-auto'
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                />
+            </div>
             <div ref={ref} className='w-[75%] mx-auto relative lg:w-[90%] md:w-full'>
                 <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]' />
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
