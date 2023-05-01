@@ -5,7 +5,7 @@ import LiIcon from './LiIcon'
 import Image from 'next/image'
 import educationPhoto from '../../public/images/profile/robot-dev.png'
 
-const Details = ({ career, institution, insitutionLink, time, address, work }) => {
+const Details = ({ career, institution, insitutionLink, time, address, description }) => {
     const ref = useRef(null);
     return (
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]'>
@@ -16,7 +16,7 @@ const Details = ({ career, institution, insitutionLink, time, address, work }) =
                     {time} | {address}
                 </span>
                 <p className='font-medium w-full md:text-sm text-justify'>
-                    {work}
+                    {description}
                 </p>
             </motion.div>
         </li>
@@ -53,7 +53,7 @@ const Education = () => {
                         institutionLink="https://www.uni.edu.pe/"
                         time="2013 - 2020"
                         address="Rímac, Lima, Peru"
-                        work="I am highly trained in the field of automation, control, and instrumentation of industrial production systems, as well as in the development of computer systems and their various applications in teleprocessing, computer centers, computerized automatic control, signal processing, and more. My training is complemented by permanent programs of pre-professional internships and guided technical visits to major service and production companies, as well as public and private sector institutions. The training of an Electronic Engineer is based on a solid preparation in the disciplines of humanities, physical and mathematical sciences, electronic communication, electronic circuits, digital systems and microprocessors, automatic control, and other disciplines specific to the field."
+                        description="I am highly trained in the field of automation, control, and instrumentation of industrial production systems, as well as in the development of computer systems and their various applications in teleprocessing, computer centers, computerized automatic control, signal processing, and more. My training is complemented by permanent programs of pre-professional internships and guided technical visits to major service and production companies, as well as public and private sector institutions. The training of an Electronic Engineer is based on a solid preparation in the disciplines of humanities, physical and mathematical sciences, electronic communication, electronic circuits, digital systems and microprocessors, automatic control, and other disciplines specific to the field."
                     />
                     <Details
                         career="Backend Developer"
@@ -61,7 +61,7 @@ const Education = () => {
                         institutionLink="https://www.silabuz.com/"
                         time="Octiber 2022 - March 2023"
                         address="Lima, Peru"
-                        work="I am highly skilled in programming languages such as Python, JavaScript, and TypeScript for front-end and back-end application development, in relational databases like MySQL and Postgres, and NoSQL databases like MongoDB. I have experience with frameworks such as Django and Flask in Python, and Express and Node in JavaScript/TypeScript. Additionally, I am proficient in AWS services such as S3, EC2, and AWS Lambda for cloud deployment and maintenance of applications, payment gateway integrations for web applications, and collaborative work with GitHub. "
+                        description="I am highly skilled in programming languages such as Python, JavaScript, and TypeScript for front-end and back-end application development, in relational databases like MySQL and Postgres, and NoSQL databases like MongoDB. I have experience with frameworks such as Django and Flask in Python, and Express and Node in JavaScript/TypeScript. Additionally, I am proficient in AWS services such as S3, EC2, and AWS Lambda for cloud deployment and maintenance of applications, payment gateway integrations for web applications, and collaborative work with GitHub. "
                     />
                 </ul>
             </div>

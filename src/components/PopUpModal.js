@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
-import { AiFillFire } from 'react-icons/ai'
+import { BiShow } from 'react-icons/bi'
 
 
 const PopUpModal = ({ srcImg, description }) => {
@@ -22,7 +22,7 @@ const PopUpModal = ({ srcImg, description }) => {
                     <div className='flex gap-5'>
                         <button type="button" className='bg-primary dark:bg-primaryDark text-light dark:text-dark active:bg-black dark:active:bg-light hover:bg-black dark:hover:bg-light flex justify-center items-center gap-2 font-bold px-6 h-12 rounded-md shadow hover:shadow-lg outline-none focus:outline-none md:h-6 md:px-3 md:text-small sm:text-xs md:text-center sm:text-center'
                             onClick={() => setShowModal(true)}
-                        >View Image <AiFillFire className='text-xl' />
+                        >View Image <BiShow className='text-xl' />
                         </button>
                     </div>
                 )
