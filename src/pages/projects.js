@@ -206,7 +206,7 @@ const Project = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const projects = () => {
+const Projects = () => {
   const [projectsToShow, setProjectsToShow] = useState(projectsData);
 
   const handleShowAllProjects = () => {
@@ -297,4 +297,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
