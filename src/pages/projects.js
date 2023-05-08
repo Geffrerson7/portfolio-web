@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useState } from "react";
 import servicesPaymentsFrontendImg from "../../public/images/projects/screenpayments-1.png"
+import jobsImg from "../../public/images/projects/jobs-api.png"
 
 const FramerImage = motion(Image);
 
@@ -109,6 +110,15 @@ const projectsData = [
     img:servicesPaymentsFrontendImg,
     link: "/ServicesPaymentsApiFrontend",
     github:"https://github.com/Geffrerson7/SERVICES-PAYMENTS-API-FRONTEND"
+  },
+  {
+    id: 10,
+    type: "Django",
+    title: "Jobs Api",
+    summary: "API to monitor your job applications on different web portals.",
+    img:jobsImg,
+    link: "/JobsAPI",
+    github:"https://github.com/Geffrerson7/JOBS-API"
   },
 ];
 
