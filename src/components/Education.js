@@ -59,7 +59,7 @@ const Education = () => {
                         career="Backend Developer"
                         institution="Silabuz - MTPE"
                         institutionLink="https://www.silabuz.com/"
-                        time="Octiber 2022 - March 2023"
+                        time="October 2022 - March 2023"
                         address="Lima, Peru"
                         description="I am highly skilled in programming languages such as Python, JavaScript, and TypeScript for front-end and back-end application development, in relational databases like MySQL and Postgres, and NoSQL databases like MongoDB. I have experience with frameworks such as Django and Flask in Python, and Express and Node in JavaScript/TypeScript. Additionally, I am proficient in AWS services such as S3, EC2, and AWS Lambda for cloud deployment and maintenance of applications, payment gateway integrations for web applications, and collaborative work with GitHub. "
                     />

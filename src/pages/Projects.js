@@ -16,8 +16,9 @@ import lambdaFunctionImg from "../../public/images/projects/lambda-function.png"
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useState } from "react";
-import servicesPaymentsFrontendImg from "../../public/images/projects/screenpayments-1.png"
-import jobsImg from "../../public/images/projects/jobs-api.png"
+import servicesPaymentsFrontendImg from "../../public/images/projects/screenpayments-1.png";
+import jobsImg from "../../public/images/projects/jobs-api.png";
+import jobsapifrontend from "../../public/images/projects/jobs-app-1.png";
 
 const FramerImage = motion(Image);
 
@@ -106,19 +107,30 @@ const projectsData = [
     id: 9,
     type: "React",
     title: "Services Payments Api Frontend",
-    summary: "Application to create service payments, create and update services, and classify payments as paid or overdue. It was designed with HTML, CSS, JavaScript, React, Vite and TailwindCSS.",
-    img:servicesPaymentsFrontendImg,
+    summary:
+      "Application to create service payments, create and update services, and classify payments as paid or overdue. It was designed with HTML, CSS, JavaScript, React, Vite and TailwindCSS.",
+    img: servicesPaymentsFrontendImg,
     link: "/ServicesPaymentsApiFrontend",
-    github:"https://github.com/Geffrerson7/SERVICES-PAYMENTS-API-FRONTEND"
+    github: "https://github.com/Geffrerson7/SERVICES-PAYMENTS-API-FRONTEND",
   },
   {
     id: 10,
     type: "Django",
     title: "Jobs Api",
     summary: "API to monitor your job applications on different web portals.",
-    img:jobsImg,
+    img: jobsImg,
     link: "/JobsAPI",
-    github:"https://github.com/Geffrerson7/JOBS-API"
+    github: "https://github.com/Geffrerson7/JOBS-API",
+  },
+  {
+    id: 11,
+    type: "React",
+    title: "Jobs Api Frontend",
+    summary:
+      "It is an application to list, register, update, and delete your job applications.",
+    img: jobsapifrontend,
+    link: "/JobsApiFrontend",
+    github: "https://github.com/Geffrerson7/JOBS-API-FRONTEND",
   },
 ];
 
