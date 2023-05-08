@@ -16,6 +16,7 @@ import lambdaFunctionImg from "../../public/images/projects/lambda-function.png"
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 import { useState } from "react";
+import servicesPaymentsFrontendImg from "../../public/images/projects/screenpayments-1.png"
 
 const FramerImage = motion(Image);
 
@@ -99,6 +100,15 @@ const projectsData = [
     img: lambdaFunctionImg,
     link: "/LambdaFunction",
     github: "https://github.com/Geffrerson7/Lambda-function-U6",
+  },
+  {
+    id: 9,
+    type: "React",
+    title: "Services Payments Api Frontend",
+    summary: "Application to create service payments, create and update services, and classify payments as paid or overdue. It was designed with HTML, CSS, JavaScript, React, Vite and TailwindCSS.",
+    img:servicesPaymentsFrontendImg,
+    link: "/ServicesPaymentsApiFrontend",
+    github:"https://github.com/Geffrerson7/SERVICES-PAYMENTS-API-FRONTEND"
   },
 ];
 
@@ -241,6 +251,13 @@ const Projects = () => {
     setProjectsToShow(pythonProjects);
   };
 
+  const handleShowReactProjects = () => {
+    const reactProjects = projectsData.filter(
+      (project) => project.type === "React"
+    );
+    setProjectsToShow(reactProjects);
+  };
+
   return (
     <>
       <Head>
@@ -261,6 +278,12 @@ const Projects = () => {
                 onClick={handleShowAllProjects}
               >
                 All
+              </button>
+              <button
+                className="bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800"
+                onClick={handleShowReactProjects}
+              >
+                React
               </button>
               <button
                 className="bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800"

@@ -37,7 +37,7 @@ const About = () => {
     const [numFollowers, setNumFollowers] = useState(0);
 
     const username = 'Geffrerson7';
-    const url = `https://api.github.com/users/${username}/repos`;
+    const url = `https://api.github.com/users/${username}/repos?per_page=100&page=1`;
     const url2 = `https://api.github.com/users/${username}/followers`;
 
     async function getNumRepos() {
