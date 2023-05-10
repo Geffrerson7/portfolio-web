@@ -18,7 +18,8 @@ import TransitionEffect from "@/components/TransitionEffect";
 import { useState } from "react";
 import servicesPaymentsFrontendImg from "../../public/images/projects/screenpayments-1.png";
 import jobsImg from "../../public/images/projects/jobs-api.png";
-import jobsapifrontend from "../../public/images/projects/jobs-app-1.png";
+import jobsapifrontendImg from "../../public/images/projects/jobs-app-1.png";
+import jobsCrudFlaskImg from "../../public/images/projects/job-crud-flask.png";
 
 const FramerImage = motion(Image);
 
@@ -128,9 +129,19 @@ const projectsData = [
     title: "Jobs Api Frontend",
     summary:
       "It is an application to list, register, update, and delete your job applications.",
-    img: jobsapifrontend,
+    img: jobsapifrontendImg,
     link: "/JobsApiFrontend",
     github: "https://github.com/Geffrerson7/JOBS-API-FRONTEND",
+  },
+  {
+    id: 12,
+    type: "Flask",
+    title: "Job CRUD",
+    summary:
+      "It is an app built with Flask, Python, HTML, and JavaScript to create, list, update, and delete your job applications.",
+    img: jobsCrudFlaskImg,
+    link: "/JobCRUD",
+    github: "https://github.com/Geffrerson7/JOB-CRUD",
   },
 ];
 

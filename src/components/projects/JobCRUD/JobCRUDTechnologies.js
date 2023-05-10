@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import Technologies from '@/components/Technologies';
 
-const RickAndMortyTechnologies = () => {
+const JobCRUDTechnologies = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -22,15 +22,15 @@ const RickAndMortyTechnologies = () => {
                     />
                     <Technologies
                         name="Flask"
-                        version="2.2.3"
+                        version="2.3.2"
                         url="https://flask.palletsprojects.com/en/2.2.x/"
                         description="Flask is a micro web framework written in Python. It is designed to be lightweight, flexible, and easy to use, making it a popular choice for building web applications and APIs. Flask provides tools and libraries for routing requests, handling HTTP requests and responses, rendering templates, and working with databases, among other features. It is known for its simplicity and ease of use, and has a large and active community of developers creating plugins and extensions to enhance its capabilities."
                     />
                     <Technologies
-                        name="Pymongo"
-                        version="4.3.3"
-                        url="https://pymongo.readthedocs.io/en/stable/"
-                        description="PyMongo is a Python library that provides a way to interact with MongoDB, a popular NoSQL database. It allows developers to use Python to access, manipulate and manage MongoDB databases and collections. PyMongo provides an API that supports various MongoDB commands such as insert, update, delete, and query. It also supports advanced features like aggregation, indexing, and geospatial queries. PyMongo is widely used in building web applications, data analysis, and scientific computing, among other applications that require a flexible and scalable database management system."
+                        name="Flask-SQLAlchemy"
+                        version="3.0.3"
+                        url="https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/"
+                        description="Flask-SQLAlchemy is an extension for Flask that adds support for SQLAlchemy to your application. It simplifies using SQLAlchemy with Flask by setting up common objects and patterns for using those objects, such as a session tied to each web request, models, and engines."
                     />
                     <Technologies
                         name="Jinja 2"
@@ -51,10 +51,10 @@ const RickAndMortyTechnologies = () => {
                         description="python-dotenv is a Python library that helps manage application configurations and environment variables. It allows developers to define environment variables in a .env file, which is loaded by the library into the application's environment when it starts up. This can be useful for storing sensitive information such as API keys, database credentials, and other configuration variables that should not be hard-coded in the application's code. python-dotenv makes it easy to manage multiple environments, such as development, staging, and production, by allowing developers to define different sets of variables for each environment. It is widely used in Python web development and is compatible with popular web frameworks such as Flask and Django."
                     />
                     <Technologies
-                        name="Rick and Morty API"
-                        version="1.0.0"
-                        url="https://rickandmortyapi.com/documentation/"
-                        description="The Rick and Morty API is a REST and GraphQL API based on the television show Rick and Morty. You will have access to about hundreds of characters, images, locations and episodes. The Rick and Morty API is filled with canonical information as seen on the TV show."
+                        name="Sweet Alert 2"
+                        version="11.7.5"
+                        url="https://sweetalert2.github.io/"
+                        description="TSweetAlert is a JavaScript library that provides beautiful and customizable alert and modal dialog boxes for web applications. It enhances the user experience by offering stylish and interactive alerts with various customization options. SweetAlert is commonly used as a replacement for the default browser alert function, allowing developers to create more visually appealing and user-friendly alerts. It supports features like custom icons, buttons, animations, and input fields, making it a popular choice for displaying messages, confirmation dialogs, and other types of notifications in web applications."
                     />
                 </ul>
             </div>
@@ -62,4 +62,4 @@ const RickAndMortyTechnologies = () => {
     )
 }
 
-export default RickAndMortyTechnologies
+export default JobCRUDTechnologies
