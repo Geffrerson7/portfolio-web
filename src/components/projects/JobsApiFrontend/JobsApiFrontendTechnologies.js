@@ -41,7 +41,7 @@ const JobsApiFrontendTechnologies = () => {
             name="Tailwind CSS"
             version="3.2.7"
             url="https://tailwindcss.com/"
-            description="Tailwind CSS is a utility-first CSS framework that provides pre-defined CSS classes that you can use to quickly style your HTML elements without having to write custom CSS. With Tailwind, you can create complex and responsive layouts using classes like `flex`, `grid`, `border`, `text`, `bg`, and more. Tailwind is highly customizable and allows you to configure color palettes, typography, spacing, and other design properties. It is commonly used in modern web development for its simplicity, flexibility, and speed of development."
+            description="Tailwind CSS is a utility-first CSS framework that provides pre-defined CSS classes that you can use to quickly style your HTML elements without having to write custom CSS. With Tailwind, you can create complex and responsive layouts using classes like flex, grid, border, text, bg, and more. Tailwind is highly customizable and allows you to configure color palettes, typography, spacing, and other design properties. It is commonly used in modern web development for its simplicity, flexibility, and speed of development."
           />
         </ul>
       </div>
