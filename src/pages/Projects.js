@@ -20,6 +20,7 @@ import servicesPaymentsFrontendImg from "../../public/images/projects/screenpaym
 import jobsImg from "../../public/images/projects/jobs-api.png";
 import jobsapifrontendImg from "../../public/images/projects/jobs-app-1.png";
 import jobsCrudFlaskImg from "../../public/images/projects/job-crud-flask.png";
+import bookStorageAndPokepediaImg from "../../public/images/projects/pokepedia.png";
 
 const FramerImage = motion(Image);
 
@@ -142,6 +143,16 @@ const projectsData = [
     img: jobsCrudFlaskImg,
     link: "/JobCRUD",
     github: "https://github.com/Geffrerson7/JOB-CRUD",
+  },
+  {
+    id: 13,
+    type: "Python",
+    title: "Book Storage and Pokepedia",
+    summary:
+        "It is an application that has two parts: The Book Storage, which is a program that allows you to register, search, and download book data such as title, genre, ISBN, publisher, and author(s) through the command line. And the Pokepedia, which is a program that allows you to search for data from the PokeAPI, such as name, ability, and image URL of the pokemons through the command line.",
+    img: bookStorageAndPokepediaImg,
+    link: "/BookStorageAndPokepedia",
+    github: "https://github.com/Geffrerson7/BOOK-STORAGE-AND-POKEPEDIA",
   },
 ];
 
