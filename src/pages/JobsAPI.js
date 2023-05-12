@@ -3,6 +3,8 @@ import Head from "next/head";
 import TransitionEffect from "@/components/TransitionEffect";
 import JobsAPIFeatures from "@/components/projects/JobsAPI/JobsAPIFeatures";
 import JobsAPITechnologies from "@/components/projects/JobsAPI/JobsAPITechnologies";
+import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
 
 const JobsAPI = () => {
   return (
@@ -13,11 +15,14 @@ const JobsAPI = () => {
       </Head>
       <TransitionEffect />
       <main>
-        <h2 className="font-bold text-8xl mb-32 mt-16 w-full text-center md:text-6xl xs:text-4xl md:mb-16 dark:text-light">
-          Jobs API
-        </h2>
-        <JobsAPIFeatures />
-        <JobsAPITechnologies />
+        <Layout className="pt-16">
+          <AnimatedText
+            text="Jobs API"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+          <JobsAPIFeatures />
+          <JobsAPITechnologies />
+        </Layout>
       </main>
     </>
   );

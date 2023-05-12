@@ -3,24 +3,29 @@ import Head from "next/head";
 import TransitionEffect from "@/components/TransitionEffect";
 import BookStorageAndPokepediaFeatures from "@/components/projects/BookStorageAndPokepedia/BookStorageAndPokepediaFeatures";
 import BookStorageAndPokepediaTechnologies from "@/components/projects/BookStorageAndPokepedia/BookStorageAndPokepediaTechnologies";
+import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
 
 const BookStorageAndPokepedia = () => {
-    return (
-        <>
-          <Head>
-            <title>Gefferson | Book Storage and Pokepedia</title>
-            <meta name="description" content="profile information" />
-          </Head>
-          <TransitionEffect />
-          <main>
-            <h2 className="font-bold text-8xl mb-32 mt-16 w-full text-center md:text-6xl xs:text-4xl md:mb-16 dark:text-light">
-              Book Storage and Pokepedia
-            </h2>
-            <BookStorageAndPokepediaFeatures />
-            <BookStorageAndPokepediaTechnologies />
-          </main>
-        </>
-      );
-}
+  return (
+    <>
+      <Head>
+        <title>Gefferson | Book Storage and Pokepedia</title>
+        <meta name="description" content="profile information" />
+      </Head>
+      <TransitionEffect />
+      <main>
+        <Layout>
+          <AnimatedText
+            text="Book Storage and Pokepedia"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+          <BookStorageAndPokepediaFeatures />
+          <BookStorageAndPokepediaTechnologies />
+        </Layout>
+      </main>
+    </>
+  );
+};
 
-export default BookStorageAndPokepedia
+export default BookStorageAndPokepedia;
