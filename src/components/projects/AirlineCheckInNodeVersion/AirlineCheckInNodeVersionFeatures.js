@@ -1,11 +1,8 @@
 import React, { useRef } from 'react'
 import { motion, useScroll } from 'framer-motion'
 import Features from '@/components/Features';
-import response200Img from '../../../../public/images/projects/response_200.png'
-import response404and400Img from '../../../../public/images/projects/response_404_400.png'
-import PopUpModal from '@/components/PopUpModal';
 
-const AirlineCheckInFeatures = () => {
+const AirlineCheckInNodeVersionFeatures = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -34,16 +31,10 @@ const AirlineCheckInFeatures = () => {
                         name="API response"
                         info="The API only gives three types of response: Succesfully response, flight not found and error response"
                     />
-                    {/* <div className='w-full flex flex-col items-center md:text-small sm:text-xs md:text-center sm:text-center'>
-                        <p>Succesfully response</p>
-                        <PopUpModal srcImg={response200Img} description="Succesfully response" />
-                        <p className='mt-32 xl:mt-16'>Flight not found and error response</p>
-                        <PopUpModal srcImg={response404and400Img} description="Flight not found and error response" />
-                    </div> */}
                 </ul>
             </div>
         </div>
     )
 }
 
-export default AirlineCheckInFeatures
+export default AirlineCheckInNodeVersionFeatures

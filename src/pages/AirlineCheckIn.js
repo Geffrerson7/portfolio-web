@@ -5,6 +5,7 @@ import AirlineCheckInFeatures from "@/components/projects/AirlineCheckIn/Airline
 import AirlineCheckInTechnologies from "@/components/projects/AirlineCheckIn/AirlineCheckInTechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import AirlineCheckInImages from "@/components/projects/AirlineCheckIn/AirlineCheckInImages";
 
 const AirlineCheckIn = () => {
   return (
@@ -21,6 +22,7 @@ const AirlineCheckIn = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <AirlineCheckInFeatures />
+          <AirlineCheckInImages />
           <AirlineCheckInTechnologies />
         </Layout>
       </main>

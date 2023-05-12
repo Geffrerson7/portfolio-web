@@ -154,6 +154,16 @@ const projectsData = [
     link: "/BookStorageAndPokepedia",
     github: "https://github.com/Geffrerson7/BOOK-STORAGE-AND-POKEPEDIA",
   },
+  {
+    id: 14,
+    type: "Node",
+    title: "Airline Check-in Node Version",
+    summary:
+        "It is a REST API with a single endpoint that allows querying by flight ID and returns the simulation of an automatic check-in for passengers of Andes Airlines.",
+    img: airlineImg,
+    link: "/AirlineCheckInNodeVersion",
+    github: "https://github.com/Geffrerson7/simulacion-check-in-aerolinea",
+  },
 ];
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
