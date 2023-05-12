@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import ServicesPayments1 from "../../../../public/images/projects/screenpayments-1.png";
 import ServicesPayments2 from "../../../../public/images/projects/screenpayments-2.png";
 import ServicesPayments3 from "../../../../public/images/projects/screenpayments-3.png";

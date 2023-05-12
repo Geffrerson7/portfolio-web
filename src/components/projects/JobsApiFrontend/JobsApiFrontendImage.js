@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { BsFillImageFill } from "react-icons/bs";
 import jobsapifrontend1 from "../../../../public/images/projects/jobs-app-1.png";
 import jobsapifrontend2 from "../../../../public/images/projects/jobs-app-2.png";

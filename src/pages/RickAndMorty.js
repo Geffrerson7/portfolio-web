@@ -5,6 +5,7 @@ import RickAndMortyFeatures from "@/components/projects/RickAndMorty/RickAndMort
 import RickAndMortyTechnologies from "@/components/projects/RickAndMorty/RickAndMortyTechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import RickAndMortyImage from "@/components/projects/RickAndMorty/RickAndMortyImage";
 
 const RickAndMorty = () => {
   return (
@@ -22,6 +23,7 @@ const RickAndMorty = () => {
           />
           <RickAndMortyFeatures />
           <RickAndMortyTechnologies />
+          <RickAndMortyImage />
         </Layout>
       </main>
     </>
