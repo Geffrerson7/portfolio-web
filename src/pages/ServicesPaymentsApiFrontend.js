@@ -4,6 +4,8 @@ import TransitionEffect from "@/components/TransitionEffect";
 import ServicesPaymentsApiFrontendFeatures from "@/components/projects/ServicesPaymentsApiFrontend/ServicesPaymentsApiFrontendFeatures";
 import ServicesPaymentsApiFrontendTechnologies from "@/components/projects/ServicesPaymentsApiFrontend/ServicesPaymentsApiFrontendTechnologies";
 import ServicesPaymentsApiFrontendImage from "@/components/projects/ServicesPaymentsApiFrontend/ServicesPaymentsApiFrontendImage";
+import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
 
 const ServicesPaymentsApiFrontend = () => {
   return (
@@ -14,12 +16,15 @@ const ServicesPaymentsApiFrontend = () => {
       </Head>
       <TransitionEffect />
       <main>
-        <h2 className="font-bold text-8xl mb-32 mt-16 w-full text-center md:text-6xl xs:text-4xl md:mb-16 dark:text-light">
-          Services Payments API Frontend
-        </h2>
-        <ServicesPaymentsApiFrontendFeatures />
-        <ServicesPaymentsApiFrontendTechnologies />
-        <ServicesPaymentsApiFrontendImage />
+        <Layout className="pt-16">
+          <AnimatedText
+            text="Services Payments API Frontend"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+          <ServicesPaymentsApiFrontendFeatures />
+          <ServicesPaymentsApiFrontendTechnologies />
+          <ServicesPaymentsApiFrontendImage />
+        </Layout>
       </main>
     </>
   );

@@ -1,27 +1,31 @@
-import React from 'react'
-import Head from 'next/head'
-import TransitionEffect from '@/components/TransitionEffect'
-import PlaylistAPIFeatures from '@/components/projects/PlaylistAPI/PlaylistAPIFeatures'
-import PlaylistAPITechnologies from '@/components/projects/PlaylistAPI/PlaylistAPITechnologies'
+import React from "react";
+import Head from "next/head";
+import TransitionEffect from "@/components/TransitionEffect";
+import PlaylistAPIFeatures from "@/components/projects/PlaylistAPI/PlaylistAPIFeatures";
+import PlaylistAPITechnologies from "@/components/projects/PlaylistAPI/PlaylistAPITechnologies";
+import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
 
 const PlaylistAPI = () => {
+  return (
+    <>
+      <Head>
+        <title>Gefferson | Playlist API</title>
+        <meta name="description" content="profile information" />
+      </Head>
+      <TransitionEffect />
+      <main>
+        <Layout className="pt-16">
+          <AnimatedText
+            text="Playlist API"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+          <PlaylistAPIFeatures />
+          <PlaylistAPITechnologies />
+        </Layout>
+      </main>
+    </>
+  );
+};
 
-    return (
-        <>
-            <Head>
-                <title>Gefferson | Playlist API</title>
-                <meta name='description' content='profile information' />
-            </Head>
-            <TransitionEffect />
-            <main>
-                <h2 className='font-bold text-8xl mb-32 mt-16 w-full text-center md:text-6xl xs:text-4xl md:mb-16 dark:text-light'>
-                    Playlist API
-                </h2>
-                <PlaylistAPIFeatures />
-                <PlaylistAPITechnologies />
-            </main>
-        </>
-    )
-}
-
-export default PlaylistAPI
+export default PlaylistAPI;

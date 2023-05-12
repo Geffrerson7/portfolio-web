@@ -4,6 +4,8 @@ import TransitionEffect from "@/components/TransitionEffect";
 import JobsApiFrontendFeatures from "@/components/projects/JobsApiFrontend/JobsApiFrontendFeatures";
 import JobsApiFrontendTechnologies from "@/components/projects/JobsApiFrontend/JobsApiFrontendTechnologies";
 import JobsApiFrontendImage from "@/components/projects/JobsApiFrontend/JobsApiFrontendImage";
+import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
 
 const JobsApiFrontend = () => {
   return (
@@ -14,12 +16,15 @@ const JobsApiFrontend = () => {
       </Head>
       <TransitionEffect />
       <main>
-        <h2 className="font-bold text-8xl mb-32 mt-16 w-full text-center md:text-6xl xs:text-4xl md:mb-16 dark:text-light">
-          Jobs API Frontend
-        </h2>
-        <JobsApiFrontendFeatures />
-        <JobsApiFrontendTechnologies />
-        <JobsApiFrontendImage />
+        <Layout className="pt-16">
+          <AnimatedText
+            text="Jobs API Frontend"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+          <JobsApiFrontendFeatures />
+          <JobsApiFrontendTechnologies />
+          <JobsApiFrontendImage />
+        </Layout>
       </main>
     </>
   );
