@@ -21,6 +21,7 @@ import jobsImg from "../../public/images/projects/jobs-api.png";
 import jobsapifrontendImg from "../../public/images/projects/jobs-app-1.png";
 import jobsCrudFlaskImg from "../../public/images/projects/job-crud-flask.png";
 import bookStorageAndPokepediaImg from "../../public/images/projects/pokepedia.png";
+import hotelBookingApiImg from "../../public/images/projects/hotel-booking-api.png"
 
 const FramerImage = motion(Image);
 
@@ -163,6 +164,16 @@ const projectsData = [
     img: airlineImg,
     link: "/AirlineCheckInNodeVersion",
     github: "https://github.com/Geffrerson7/simulacion-check-in-aerolinea",
+  },
+  {
+    id: 15,
+    type: "Django",
+    title: "Hotel Booking API",
+    summary:
+        "It is an API for making online reservations in a hotel.",
+    img: hotelBookingApiImg,
+    link: "/HotelBookingAPI",
+    github: "https://github.com/Geffrerson7/HOTEL-RESERVATION-API",
   },
 ];
 
