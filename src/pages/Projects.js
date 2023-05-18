@@ -23,6 +23,7 @@ import jobsCrudFlaskImg from "../../public/images/projects/job-crud-flask.png";
 import bookStorageAndPokepediaImg from "../../public/images/projects/pokepedia.png";
 import hotelBookingApiImg from "../../public/images/projects/hotel-booking-api.png"
 import onlineCoursesApiImg from "../../public/images/projects/online-courses-api.png"
+import onlineCoursesApiFrontendImg from "../../public/images/projects/online-courses-api-frontend-1.png"
 
 const FramerImage = motion(Image);
 
@@ -185,6 +186,16 @@ const projectsData = [
     img: onlineCoursesApiImg,
     link: "/OnlineCoursesAPI",
     github: "https://github.com/Geffrerson7/ONLINE-COURSES-API",
+  },
+  {
+    id: 17,
+    type: "React",
+    title: "Online Courses API Frontend",
+    summary:
+        "It is an application to make online course purchases.",
+    img: onlineCoursesApiFrontendImg,
+    link: "/OnlineCoursesApiFrontend",
+    github: "https://github.com/Geffrerson7/ONLINE-COURSES-API-FRONTEND",
   },
 ];
 

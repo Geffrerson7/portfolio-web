@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import Technologies from "@/components/Technologies";
 
-const JobsApiFrontendTechnologies = () => {
+const OnlineCoursesApiFrontendTechnologies = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -32,10 +32,10 @@ const JobsApiFrontendTechnologies = () => {
             description="Vite.js is a build tool and development server designed to optimize the development experience for modern web development frameworks such as React, Vue, and Svelte. It leverages native ES modules in the browser to enable fast development server startup times, quick rebuilds, and a more efficient production build process. Vite.js also offers features such as hot module replacement, automatic code splitting, and a plugin system for extending its functionality. It has gained popularity in the React and Vue communities as an alternative to tools like Create React App and Vue CLI."
           />
           <Technologies
-            name="JavaScript"
-            version="ES12"
-            url="https://developer.mozilla.org/es/docs/Web/JavaScript"
-            description="JavaScript is a high-level, dynamic, interpreted programming language that is commonly used for creating interactive web applications. It was created by Brendan Eich at Netscape in 1995 and has since become one of the most widely used programming languages in the world. JavaScript allows developers to add interactivity, animations, and dynamic content to web pages, and it can also be used for server-side programming with the help of Node.js. It is a versatile language that can be used for a wide range of applications, including web and mobile app development, game development, and desktop application development."
+            name="TypeScript"
+            version="4.9.4"
+            url="https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html"
+            description="TypeScript is an open-source programming language and a strict syntactical superset of JavaScript, which means that it builds upon and extends the features of JavaScript by adding optional static typing, interfaces, classes, and other features that make it more suitable for large-scale software development."
           />
           <Technologies
             name="Tailwind CSS"
@@ -61,4 +61,4 @@ const JobsApiFrontendTechnologies = () => {
   );
 };
 
-export default JobsApiFrontendTechnologies;
+export default OnlineCoursesApiFrontendTechnologies;

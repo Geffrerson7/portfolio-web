@@ -54,7 +54,7 @@ const JobCRUDTechnologies = () => {
                         name="Sweet Alert 2"
                         version="11.7.5"
                         url="https://sweetalert2.github.io/"
-                        description="TSweetAlert is a JavaScript library that provides beautiful and customizable alert and modal dialog boxes for web applications. It enhances the user experience by offering stylish and interactive alerts with various customization options. SweetAlert is commonly used as a replacement for the default browser alert function, allowing developers to create more visually appealing and user-friendly alerts. It supports features like custom icons, buttons, animations, and input fields, making it a popular choice for displaying messages, confirmation dialogs, and other types of notifications in web applications."
+                        description="SweetAlert is a JavaScript library that provides beautiful and customizable alert and modal dialog boxes for web applications. It enhances the user experience by offering stylish and interactive alerts with various customization options. SweetAlert is commonly used as a replacement for the default browser alert function, allowing developers to create more visually appealing and user-friendly alerts. It supports features like custom icons, buttons, animations, and input fields, making it a popular choice for displaying messages, confirmation dialogs, and other types of notifications in web applications."
                     />
                 </ul>
             </div>
