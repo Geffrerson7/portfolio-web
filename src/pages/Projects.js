@@ -22,6 +22,7 @@ import jobsapifrontendImg from "../../public/images/projects/jobs-app-1.png";
 import jobsCrudFlaskImg from "../../public/images/projects/job-crud-flask.png";
 import bookStorageAndPokepediaImg from "../../public/images/projects/pokepedia.png";
 import hotelBookingApiImg from "../../public/images/projects/hotel-booking-api.png"
+import onlineCoursesApiImg from "../../public/images/projects/online-courses-api.png"
 
 const FramerImage = motion(Image);
 
@@ -174,6 +175,16 @@ const projectsData = [
     img: hotelBookingApiImg,
     link: "/HotelBookingAPI",
     github: "https://github.com/Geffrerson7/HOTEL-RESERVATION-API",
+  },
+  {
+    id: 16,
+    type: "Django",
+    title: "Online Courses API",
+    summary:
+        "It is an API for simulating online course purchases using the Mercado Pago API.",
+    img: onlineCoursesApiImg,
+    link: "/OnlineCoursesAPI",
+    github: "https://github.com/Geffrerson7/ONLINE-COURSES-API",
   },
 ];
 

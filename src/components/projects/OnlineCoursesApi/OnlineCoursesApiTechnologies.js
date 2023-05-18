@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import Technologies from "@/components/Technologies";
 
-const JobsAPITechnologies = () => {
+const OnlineCoursesApiTechnologies = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -22,13 +22,13 @@ const JobsAPITechnologies = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Technologies
             name="Python"
-            version="3.10.7"
+            version="3.11.2"
             url="https://www.python.org/"
             description="Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java."
           />
           <Technologies
             name="Django"
-            version="4.1.7"
+            version="4.2.1"
             url="https://www.djangoproject.com/"
             description="Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It&#39;s free and open source."
           />
@@ -68,4 +68,4 @@ const JobsAPITechnologies = () => {
   );
 };
 
-export default JobsAPITechnologies;
+export default OnlineCoursesApiTechnologies;

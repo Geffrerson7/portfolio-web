@@ -46,7 +46,7 @@ const HotelBookingAPITechnologies = () => {
             />
             <Technologies
               name="Django Cors Headers"
-              version="3.14.0"
+              version="4.0.0"
               url="https://pypi.org/project/django-cors-headers/"
               description="A Django App that adds Cross-Origin Resource Sharing (CORS) headers to responses. This allows in-browser requests to your Django application from other origins."
             />
