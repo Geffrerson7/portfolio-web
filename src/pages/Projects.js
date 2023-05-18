@@ -232,7 +232,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
               {title}
             </h2>
           </Link>
-          <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          <p className="my-2 font-medium text-dark dark:text-light sm:text-sm text-justify">
             {summary}
           </p>
           <div className="mt-2 flex items-center">
