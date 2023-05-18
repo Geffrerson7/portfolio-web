@@ -5,6 +5,7 @@ import JobCRUDFeatures from "@/components/projects/JobCRUD/JobCRUDFeatures";
 import JobCRUDTechnologies from "@/components/projects/JobCRUD/JobCRUDTechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import JobCRUDImages from "@/components/projects/JobCRUD/JobCRUDImages";
 
 const JobCRUD = () => {
   return (
@@ -22,6 +23,7 @@ const JobCRUD = () => {
           />
           <JobCRUDFeatures />
           <JobCRUDTechnologies />
+          <JobCRUDImages />
         </Layout>
       </main>
     </>
