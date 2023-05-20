@@ -24,6 +24,7 @@ import bookStorageAndPokepediaImg from "../../public/images/projects/pokepedia.p
 import hotelBookingApiImg from "../../public/images/projects/hotel-booking-api.png"
 import onlineCoursesApiImg from "../../public/images/projects/online-courses-api.png"
 import onlineCoursesApiFrontendImg from "../../public/images/projects/online-courses-api-frontend-1.png"
+import projectsApiImg from "../../public/images/projects/projects-api.png"
 
 const FramerImage = motion(Image);
 
@@ -196,6 +197,16 @@ const projectsData = [
     img: onlineCoursesApiFrontendImg,
     link: "/OnlineCoursesApiFrontend",
     github: "https://github.com/Geffrerson7/ONLINE-COURSES-API-FRONTEND",
+  },
+  {
+    id: 18,
+    type: "Flask",
+    title: "Projects API",
+    summary:
+        "It is an application to make online course purchases.",
+    img: projectsApiImg,
+    link: "/ProjectsAPI",
+    github: "https://github.com/Geffrerson7/PROJECTS-API",
   },
 ];
 
