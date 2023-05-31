@@ -55,6 +55,14 @@ const OnlineCoursesApiFrontendTechnologies = () => {
             url="https://sweetalert2.github.io/"
             description="SweetAlert is a JavaScript library that provides beautiful and customizable alert and modal dialog boxes for web applications. It enhances the user experience by offering stylish and interactive alerts with various customization options. SweetAlert is commonly used as a replacement for the default browser alert function, allowing developers to create more visually appealing and user-friendly alerts. It supports features like custom icons, buttons, animations, and input fields, making it a popular choice for displaying messages, confirmation dialogs, and other types of notifications in web applications."
           />
+          <Technologies
+            name="MercadoPago"
+            version="V2"
+            url="https://github.com/mercadopago/sdk-js"
+            description="
+            SDK MercadoPago.js V2 refers to the software development kit (SDK) provided by MercadoPago, a leading online payment platform in Latin America. The SDK allows developers to integrate MercadoPago's payment functionality into their web applications or websites.
+            With MercadoPago.js V2, developers can securely process online payments, manage transactions, handle refunds, and perform other payment-related operations. The SDK provides a set of client-side JavaScript libraries and APIs that simplify the integration process."
+          />
         </ul>
       </div>
     </div>

@@ -62,6 +62,14 @@ const OnlineCoursesApiTechnologies = () => {
             url="https://docs.docker.com/"
             description="Docker is a popular platform for developing, packaging, and deploying software applications. It uses containerization technology to create lightweight, portable, and self-sufficient software containers that can run on any system with the Docker engine installed. Docker allows developers to package their applications and dependencies into a single unit called a container, which can then be easily moved between development, testing, and production environments. It also provides tools for managing and orchestrating containers, making it easier to deploy and scale applications in a distributed environment."
           />
+          <Technologies
+            name="MercadoPago"
+            version="V2"
+            url="https://github.com/mercadopago/sdk-python"
+            description="
+            SDK MercadoPago Python refers to the software development kit (SDK) provided by MercadoPago, a leading online payment platform in Latin America, for the Python programming language. The SDK allows developers to integrate MercadoPago's payment functionality into their Python-based applications or websites.
+            With the MercadoPago Python SDK, developers can interact with MercadoPago's API, enabling them to securely process online payments, manage transactions, handle refunds, and perform other payment-related operations. The SDK provides a set of pre-built functions, methods, and classes that simplify the integration process and facilitate communication with the MercadoPago API."
+          />
         </ul>
       </div>
     </div>
