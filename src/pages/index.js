@@ -34,7 +34,7 @@ export default function Home() {
                 I&#39;m a graduate of electronic engineering and I&#39;m currently working as a junior backend developer. Let&#39;s build something together.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href="https://rxresu.me/gcasasolah/cvgef" target="_blank"
+                <Link href="https://drive.google.com/file/d/1hxtfqPaYU4zP35wC0jrbVsS4JQ5YIG_O/view?usp=sharing" target="_blank"
                   className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
                    dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:pd-2 md:px-4 md:text-base'
                 >Resume <LinkArrow className={"w-6 ml-1"} /></Link>

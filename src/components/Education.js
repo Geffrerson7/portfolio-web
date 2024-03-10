@@ -21,7 +21,6 @@ const Details = ({ career, institution, insitutionLink, time, address, descripti
             </motion.div>
         </li>
     )
-
 }
 
 const Education = () => {

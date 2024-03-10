@@ -8,6 +8,7 @@ import { useMotionValue, useSpring, useInView } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import Volunteering from '@/components/Volunteering'
 import Education from '@/components/Education'
+import Experience from '@/components/Experience'
 
 const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null)
@@ -128,6 +129,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+                <Experience />
                 <Education />
                 <Volunteering />
                 </Layout>
