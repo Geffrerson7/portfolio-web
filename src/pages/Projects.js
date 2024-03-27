@@ -25,6 +25,7 @@ import hotelBookingApiImg from "../../public/images/projects/hotel-booking-api.p
 import onlineCoursesApiImg from "../../public/images/projects/online-courses-api.png"
 import onlineCoursesApiFrontendImg from "../../public/images/projects/online-courses-api-frontend-1.png"
 import projectsApiImg from "../../public/images/projects/projects-api.png"
+import IV100TelegramBotImg from "../../public/images/projects/iv-100.png"
 
 const FramerImage = motion(Image);
 
@@ -207,6 +208,16 @@ const projectsData = [
     img: projectsApiImg,
     link: "/ProjectsAPI",
     github: "https://github.com/Geffrerson7/PROJECTS-API",
+  },
+  {
+    id: 19,
+    type: "Python",
+    title: "IV 100 Telegram Bot",
+    summary:
+        "Telegram bot for sending Pokemon coordinates with IV 100.",
+    img: IV100TelegramBotImg,
+    link: "/IV100TelegramBot",
+    github: "https://github.com/Geffrerson7/iv100-bot",
   },
 ];
 
