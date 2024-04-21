@@ -1,0 +1,23 @@
+{
+  "status": "ready",
+  "originalFilePath": "videos/New-Demo-IV-100-Bot.mp4",
+  "provider": "mux",
+  "providerMetadata": {
+    "mux": {
+      "uploadId": "7grNpgAXk5vvcmIL1vfJFjUi014Lqf2KUXgbVTuRvfZ4",
+      "assetId": "EwOlE3hl81lBUgC00NJ8j9l00lXNLy02VRwTBz01wRKEPAI",
+      "playbackId": "sUrmOii02v6u14oUYEfoymqrfxRN8h1afOjsGqtlOq2Q"
+    }
+  },
+  "createdAt": 1713666513005,
+  "updatedAt": 1713666524731,
+  "size": 28280504,
+  "sources": [
+    {
+      "src": "https://stream.mux.com/sUrmOii02v6u14oUYEfoymqrfxRN8h1afOjsGqtlOq2Q.m3u8",
+      "type": "application/x-mpegURL"
+    }
+  ],
+  "poster": "https://image.mux.com/sUrmOii02v6u14oUYEfoymqrfxRN8h1afOjsGqtlOq2Q/thumbnail.webp",
+  "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAkAAQAcJZQCdAEPAtOwoAD+/lur803PvF7KXAqCrrbRut2G8sf1J1RJ5K2K2XVhXOx7e9oOfDUGL3Ll/ib4kqWx7Bxiw38qtpAA"
+}

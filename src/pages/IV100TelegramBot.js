@@ -5,7 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import IV100TelegramBotTechnologies from "@/components/projects/IV100TelegramBot/IV100TelegramBotTechnologies";
 import IV100TelegramBotFeatures from "@/components/projects/IV100TelegramBot/IV100TelegramBotFeatures";
-import IV100TelegramBotImage from "@/components/projects/IV100TelegramBot/IV100TelegramBotImage";
+import IV100TelegramBotVideo from "@/components/projects/IV100TelegramBot/IV100TelegramBotVideo";
 
 const IV100TelegramBot = () => {
     return (
@@ -23,7 +23,7 @@ const IV100TelegramBot = () => {
               />
               <IV100TelegramBotFeatures />
               <IV100TelegramBotTechnologies />
-              <IV100TelegramBotImage />
+              <IV100TelegramBotVideo />
             </Layout>
           </main>
         </>

@@ -20,12 +20,12 @@ const IV100TelegramBotFeatures = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Features
-            name="Pokemon coordinates with IV 100"
-            info="The bot sends coordinates of Pokemon with IV equal to 100."
+            name="Pokemon coordinates with IV 100 and 90"
+            info="The bot sends coordinates of Pokemon with IV equal to 100 and 90."
           />
           <Features
             name="Opening and Ending commands"
-            info="The bot has two commands, /iv100 and /stop, to start and stop coordinates, respectively."
+            info="The bot has three commands: /iv100 and /iv90 to start sending coordinates with IV 100 and 90, respectively, and /stop to stop sending coordinates."
           />
           <Features
             name="Users Restrictions"
