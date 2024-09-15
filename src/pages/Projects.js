@@ -213,9 +213,9 @@ const Projects = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <div className="flex justify-center mb-4 mt-4 col-span-12">
+            <div className="flex flex-wrap justify-center mb-4 mt-4 col-span-12">
               <button
-                className={`bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 rounded-l dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
+                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs rounded-tl dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
                   showAll
                     ? "bg-primary dark:bg-primaryDark"
                     : "bg-gray-800 dark:bg-gray-300"
@@ -225,7 +225,7 @@ const Projects = () => {
                 All
               </button>
               <button
-                className={`bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
+                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
                   showReact
                     ? "bg-primary dark:bg-primaryDark"
                     : "bg-gray-800 dark:bg-gray-300"
@@ -235,7 +235,7 @@ const Projects = () => {
                 React
               </button>
               <button
-                className={`bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
+                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs rounded-tr dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
                   showNode
                     ? "bg-primary dark:bg-primaryDark"
                     : "bg-gray-800 dark:bg-gray-300"
@@ -245,7 +245,7 @@ const Projects = () => {
                 Node
               </button>
               <button
-                className={`bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
+                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs rounded-bl dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
                   showDjango
                     ? "bg-primary dark:bg-primaryDark"
                     : "bg-gray-800 dark:bg-gray-300"
@@ -255,7 +255,7 @@ const Projects = () => {
                 Django
               </button>
               <button
-                className={`bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
+                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
                   showFlask
                     ? "bg-primary dark:bg-primaryDark"
                     : "bg-gray-800 dark:bg-gray-300"
@@ -265,7 +265,7 @@ const Projects = () => {
                 Flask
               </button>
               <button
-                className={`bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 rounded-r dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
+                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs rounded-br dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
                   showPython
                     ? "bg-primary dark:bg-primaryDark"
                     : "bg-gray-800 dark:bg-gray-300"
