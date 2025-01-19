@@ -10,6 +10,9 @@ import TransitionEffect from "@/components/TransitionEffect";
 import { useState } from "react";
 import projectsData from "../data/projects.js";
 const FramerImage = motion(Image);
+import { Transition } from "@/ui/Transition.jsx";
+import { TextReveal } from "@/ui/Typography.jsx";
+import { cn } from "@/utils/cn.js";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -213,68 +216,124 @@ const Projects = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            <div className="flex flex-wrap justify-center mb-4 mt-4 col-span-12">
-              <button
-                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs rounded-tl dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
-                  showAll
-                    ? "bg-primary dark:bg-primaryDark"
-                    : "bg-gray-800 dark:bg-gray-300"
-                }`}
-                onClick={handleShowAllProjects}
-              >
-                All
-              </button>
-              <button
-                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
-                  showReact
-                    ? "bg-primary dark:bg-primaryDark"
-                    : "bg-gray-800 dark:bg-gray-300"
-                }`}
-                onClick={handleShowReactProjects}
-              >
-                React
-              </button>
-              <button
-                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs rounded-tr dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
-                  showNode
-                    ? "bg-primary dark:bg-primaryDark"
-                    : "bg-gray-800 dark:bg-gray-300"
-                }`}
-                onClick={handleShowNodeProjects}
-              >
-                Node
-              </button>
-              <button
-                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs rounded-bl dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
-                  showDjango
-                    ? "bg-primary dark:bg-primaryDark"
-                    : "bg-gray-800 dark:bg-gray-300"
-                }`}
-                onClick={handleShowDjangoProjects}
-              >
-                Django
-              </button>
-              <button
-                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
-                  showFlask
-                    ? "bg-primary dark:bg-primaryDark"
-                    : "bg-gray-800 dark:bg-gray-300"
-                }`}
-                onClick={handleShowFlaskProjects}
-              >
-                Flask
-              </button>
-              <button
-                className={`w-1/3 bg-gray-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 sm:py-1 sm:px-2 xs:py-0 xs:px-1 sm:text-sm xs:text-xs rounded-br dark:bg-gray-300 dark:hover:bg-gray-400 dark:text-gray-800 ${
-                  showPython
-                    ? "bg-primary dark:bg-primaryDark"
-                    : "bg-gray-800 dark:bg-gray-300"
-                }`}
-                onClick={handleShowPythonProjects}
-              >
-                Python
-              </button>
+            <div className="flex flex-wrap justify-center gap-4 mb-4 mt-4 col-span-12">
+              <Transition viewport={{ once: true }}>
+                <button
+                  className={cn(
+                    "border border-black/50 dark:border-white/30 px-6 py-2 rounded-full relative",
+                    showAll && "text-black border-transparent"
+                  )}
+                  onClick={handleShowAllProjects}
+                >
+                  {showAll && (
+                    <motion.span
+                      transition={{ type: "spring", bounce: 0.3 }}
+                      exit={{ type: "spring" }}
+                      layoutId="active-filter"
+                      className="absolute top-0 left-0 w-full h-full bg-primary dark:bg-primaryDark -z-10 rounded-full"
+                    />
+                  )}
+                  <TextReveal>All</TextReveal>
+                </button>
+              </Transition>
+
+              <Transition viewport={{ once: true }}>
+                <button
+                  className={cn(
+                    "border border-black/50 dark:border-white/30 px-6 py-2 rounded-full relative",
+                    showReact && "text-black border-transparent"
+                  )}
+                  onClick={handleShowReactProjects}
+                >
+                  {showReact && (
+                    <motion.span
+                      transition={{ type: "spring", bounce: 0.3 }}
+                      exit={{ type: "spring" }}
+                      layoutId="active-filter"
+                      className="absolute top-0 left-0 w-full h-full bg-primary dark:bg-primaryDark -z-10 rounded-full"
+                    />
+                  )}
+                  <TextReveal>React</TextReveal>
+                </button>
+              </Transition>
+              <Transition viewport={{ once: true }}>
+                <button
+                  className={cn(
+                    "border border-black/50 dark:border-white/30 px-6 py-2 rounded-full relative",
+                    showNode && "text-black border-transparent"
+                  )}
+                  onClick={handleShowNodeProjects}
+                >
+                  {showNode && (
+                    <motion.span
+                      transition={{ type: "spring", bounce: 0.3 }}
+                      exit={{ type: "spring" }}
+                      layoutId="active-filter"
+                      className="absolute top-0 left-0 w-full h-full bg-primary dark:bg-primaryDark -z-10 rounded-full"
+                    />
+                  )}
+                  <TextReveal>Node</TextReveal>
+                </button>
+              </Transition>
+              <Transition viewport={{ once: true }}>
+                <button
+                  className={cn(
+                    "border border-black/50 dark:border-white/30 px-6 py-2 rounded-full relative",
+                    showDjango && "text-black border-transparent"
+                  )}
+                  onClick={handleShowDjangoProjects}
+                >
+                  {showDjango && (
+                    <motion.span
+                      transition={{ type: "spring", bounce: 0.3 }}
+                      exit={{ type: "spring" }}
+                      layoutId="active-filter"
+                      className="absolute top-0 left-0 w-full h-full bg-primary dark:bg-primaryDark -z-10 rounded-full"
+                    />
+                  )}
+                  <TextReveal>Django</TextReveal>
+                </button>
+              </Transition>
+              <Transition viewport={{ once: true }}>
+                <button
+                  className={cn(
+                    "border border-black/50 dark:border-white/30 px-6 py-2 rounded-full relative",
+                    showFlask && "text-black border-transparent"
+                  )}
+                  onClick={handleShowFlaskProjects}
+                >
+                  {showFlask && (
+                    <motion.span
+                      transition={{ type: "spring", bounce: 0.3 }}
+                      exit={{ type: "spring" }}
+                      layoutId="active-filter"
+                      className="absolute top-0 left-0 w-full h-full bg-primary dark:bg-primaryDark -z-10 rounded-full"
+                    />
+                  )}
+                  <TextReveal>Flask</TextReveal>
+                </button>
+              </Transition>
+              <Transition viewport={{ once: true }}>
+                <button
+                  className={cn(
+                    "border border-black/50 dark:border-white/30 px-6 py-2 rounded-full relative",
+                    showPython && "text-black border-transparent"
+                  )}
+                  onClick={handleShowPythonProjects}
+                >
+                  {showPython && (
+                    <motion.span
+                      transition={{ type: "spring", bounce: 0.3 }}
+                      exit={{ type: "spring" }}
+                      layoutId="active-filter"
+                      className="absolute top-0 left-0 w-full h-full bg-primary dark:bg-primaryDark -z-10 rounded-full"
+                    />
+                  )}
+                  <TextReveal>Python</TextReveal>
+                </button>
+              </Transition>
             </div>
+
             {projectsToShow.map((project) => (
               <FeaturedProject key={project.id} {...project} />
             ))}
