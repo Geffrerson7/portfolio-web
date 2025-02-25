@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import {motion, useScroll} from 'framer-motion'
 
 const LiIcon = ({reference}) => {
-    const {scrollYProgress} = useScroll({
-        target: reference,
+    const [target, setTarget] = useState(null);
+
+    useEffect(() => {
+        if (reference?.current) {
+            setTarget(reference.current);
+        }
+    }, [reference]);
+
+    const { scrollYProgress } = useScroll({
+        target,
         offset: ["center end", "center center"]
     });
 
