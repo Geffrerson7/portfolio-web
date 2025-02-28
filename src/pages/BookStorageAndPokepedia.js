@@ -5,7 +5,6 @@ import BookStorageAndPokepediaFeatures from "@/components/projects/BookStorageAn
 import BookStorageAndPokepediaTechnologies from "@/components/projects/BookStorageAndPokepedia/BookStorageAndPokepediaTechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
-import BookStorageAndPokepediaImages from "@/components/projects/BookStorageAndPokepedia/BookStorageAndPokepediaImages";
 
 const BookStorageAndPokepedia = () => {
   return (
@@ -23,7 +22,6 @@ const BookStorageAndPokepedia = () => {
           />
           <BookStorageAndPokepediaFeatures />
           <BookStorageAndPokepediaTechnologies />
-          <BookStorageAndPokepediaImages />
         </Layout>
       </main>
     </>
