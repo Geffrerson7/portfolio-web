@@ -7,6 +7,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 import Volunteering from "@/components/Volunteering";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const About = () => {
   return (
@@ -87,6 +88,7 @@ const About = () => {
           <Education />
           <Volunteering />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

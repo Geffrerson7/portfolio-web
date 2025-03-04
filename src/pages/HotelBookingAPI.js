@@ -5,6 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import HotelBookingAPIFeatures from "@/components/projects/HotelBookingAPI/HotelBookingAPIFeatures";
 import HotelBookingAPITechnologies from "@/components/projects/HotelBookingAPI/HotelBookingAPITechnologies";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const HotelBookingAPI = () => {
     return (
@@ -23,6 +24,7 @@ const HotelBookingAPI = () => {
                 <HotelBookingAPIFeatures />
                 <HotelBookingAPITechnologies />
             </Layout>
+            <ScrollToTopButton />
           </main>
         </>
       );

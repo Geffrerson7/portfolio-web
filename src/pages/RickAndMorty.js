@@ -6,6 +6,7 @@ import RickAndMortyTechnologies from "@/components/projects/RickAndMorty/RickAnd
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import RickAndMortyImage from "@/components/projects/RickAndMorty/RickAndMortyImage";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const RickAndMorty = () => {
   return (
@@ -25,6 +26,7 @@ const RickAndMorty = () => {
           <RickAndMortyTechnologies />
           <RickAndMortyImage />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

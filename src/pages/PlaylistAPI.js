@@ -5,6 +5,7 @@ import PlaylistAPIFeatures from "@/components/projects/PlaylistAPI/PlaylistAPIFe
 import PlaylistAPITechnologies from "@/components/projects/PlaylistAPI/PlaylistAPITechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const PlaylistAPI = () => {
   return (
@@ -23,6 +24,7 @@ const PlaylistAPI = () => {
           <PlaylistAPIFeatures />
           <PlaylistAPITechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

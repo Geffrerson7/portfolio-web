@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import AirlineCheckInNodeVersionFeatures from "@/components/projects/AirlineCheckInNodeVersion/AirlineCheckInNodeVersionFeatures";
 import AirlineCheckInNodeVersionImages from "@/components/projects/AirlineCheckInNodeVersion/AirlineCheckInNodeVersionImages";
 import AirlineCheckInNodeVersionTechnologies from "@/components/projects/AirlineCheckInNodeVersion/AirlineCheckInNodeVersionTechnologies";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const AirlineCheckInNodeVersion = () => {
     return (
@@ -25,6 +26,7 @@ const AirlineCheckInNodeVersion = () => {
               <AirlineCheckInNodeVersionImages />
               <AirlineCheckInNodeVersionTechnologies />
             </Layout>
+            <ScrollToTopButton />
           </main>
         </>
       );

@@ -5,6 +5,7 @@ import DjangoPortfolioFeatures from "@/components/projects/DjangoPortfolio/Djang
 import DjangoPortfolioTechnologies from "@/components/projects/DjangoPortfolio/DjangoPortfolioTechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const DjangPortfolio = () => {
   return (
@@ -23,6 +24,7 @@ const DjangPortfolio = () => {
           <DjangoPortfolioFeatures />
           <DjangoPortfolioTechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

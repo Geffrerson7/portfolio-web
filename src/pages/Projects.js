@@ -13,6 +13,7 @@ const FramerImage = motion(Image);
 import { Transition } from "@/ui/Transition.jsx";
 import { TextReveal } from "@/ui/Typography.jsx";
 import { cn } from "@/utils/cn.js";
+import ScrollToTopButton from "@/components/ScrollToTopButton.js";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -339,6 +340,7 @@ const Projects = () => {
             ))}
           </div>
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

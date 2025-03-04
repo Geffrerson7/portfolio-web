@@ -6,6 +6,7 @@ import JobsApiFrontendTechnologies from "@/components/projects/JobsApiFrontend/J
 import JobsApiFrontendImage from "@/components/projects/JobsApiFrontend/JobsApiFrontendImage";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const JobsApiFrontend = () => {
   return (
@@ -25,6 +26,7 @@ const JobsApiFrontend = () => {
           <JobsApiFrontendTechnologies />
           <JobsApiFrontendImage />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

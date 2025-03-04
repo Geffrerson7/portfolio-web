@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import IV100TelegramBotTechnologies from "@/components/projects/IV100TelegramBot/IV100TelegramBotTechnologies";
 import IV100TelegramBotFeatures from "@/components/projects/IV100TelegramBot/IV100TelegramBotFeatures";
 import IV100TelegramBotVideo from "@/components/projects/IV100TelegramBot/IV100TelegramBotVideo";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const IV100TelegramBot = () => {
     return (
@@ -25,6 +26,7 @@ const IV100TelegramBot = () => {
               <IV100TelegramBotTechnologies />
               <IV100TelegramBotVideo />
             </Layout>
+            <ScrollToTopButton />
           </main>
         </>
       );

@@ -5,6 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import ProjectsAPIFeatures from "@/components/projects/ProjectsAPI/ProjectsAPIFeatures";
 import ProjectsAPITechnologies from "@/components/projects/ProjectsAPI/ProjectsAPITechnologies";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const ProjectsAPI = () => {
   return (
@@ -23,6 +24,7 @@ const ProjectsAPI = () => {
         <ProjectsAPIFeatures />
         <ProjectsAPITechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   )

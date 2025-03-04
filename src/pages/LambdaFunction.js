@@ -5,6 +5,7 @@ import LambdaFunctionFeatures from "@/components/projects/LambdaFunction/LambdaF
 import LambdaFunctionTechnologies from "@/components/projects/LambdaFunction/LambdaFunctionTechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const LambdaFunction = () => {
   return (
@@ -23,6 +24,7 @@ const LambdaFunction = () => {
           <LambdaFunctionFeatures />
           <LambdaFunctionTechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );
