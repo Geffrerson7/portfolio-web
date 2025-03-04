@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import OnlineCoursesApiFrontendFeatures from "@/components/projects/OnlineCoursesApiFrontend/OnlineCoursesApiFrontendFeatures";
 import OnlineCoursesApiFrontendTechnologies from "@/components/projects/OnlineCoursesApiFrontend/OnlineCoursesApiFrontendTechnologies";
 import OnlineCoursesApiFrontendImages from "@/components/projects/OnlineCoursesApiFrontend/OnlineCoursesApiFrontendImages";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const OnlineCoursesApifrontend = () => {
   return (
@@ -25,6 +26,7 @@ const OnlineCoursesApifrontend = () => {
         <OnlineCoursesApiFrontendTechnologies />
         <OnlineCoursesApiFrontendImages />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

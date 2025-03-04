@@ -5,6 +5,7 @@ import MoviesAPIFeatures from "@/components/projects/MoviesAPI/MoviesAPIFeatures
 import MoviesAPITechnologies from "@/components/projects/MoviesAPI/MoviesAPITechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const MoviesAPI = () => {
   return (
@@ -23,6 +24,7 @@ const MoviesAPI = () => {
           <MoviesAPIFeatures />
           <MoviesAPITechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

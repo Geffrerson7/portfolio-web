@@ -6,6 +6,7 @@ import JobCRUDTechnologies from "@/components/projects/JobCRUD/JobCRUDTechnologi
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import JobCRUDImages from "@/components/projects/JobCRUD/JobCRUDImages";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const JobCRUD = () => {
   return (
@@ -25,6 +26,7 @@ const JobCRUD = () => {
           <JobCRUDTechnologies />
           <JobCRUDImages />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

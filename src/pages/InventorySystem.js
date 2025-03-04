@@ -5,6 +5,7 @@ import InventorySystemFeatures from "@/components/projects/InventorySystem/Inven
 import InventorySystemTechnologies from "@/components/projects/InventorySystem/InventorySystemTechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const InventorySystem = () => {
   return (
@@ -23,6 +24,7 @@ const InventorySystem = () => {
           <InventorySystemFeatures />
           <InventorySystemTechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

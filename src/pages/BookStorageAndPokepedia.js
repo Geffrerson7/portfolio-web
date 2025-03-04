@@ -5,6 +5,7 @@ import BookStorageAndPokepediaFeatures from "@/components/projects/BookStorageAn
 import BookStorageAndPokepediaTechnologies from "@/components/projects/BookStorageAndPokepedia/BookStorageAndPokepediaTechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const BookStorageAndPokepedia = () => {
   return (
@@ -23,6 +24,7 @@ const BookStorageAndPokepedia = () => {
           <BookStorageAndPokepediaFeatures />
           <BookStorageAndPokepediaTechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

@@ -5,6 +5,7 @@ import ServicesPaymentsAPIFeatures from "@/components/projects/ServicesPaymentsA
 import ServicesPaymentsAPITechnologies from "@/components/projects/ServicesPaymentsAPI/ServicesPaymentsAPITechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const ServicesPaymentsAPI = () => {
   return (
@@ -23,6 +24,7 @@ const ServicesPaymentsAPI = () => {
           <ServicesPaymentsAPIFeatures />
           <ServicesPaymentsAPITechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

@@ -5,6 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import OnlineCoursesApiFeatures from "@/components/projects/OnlineCoursesApi/OnlineCoursesApiFeatures";
 import OnlineCoursesApiTechnologies from "@/components/projects/OnlineCoursesApi/OnlineCoursesApiTechnologies";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const OnlineCoursesAPI = () => {
   return (
@@ -23,6 +24,7 @@ const OnlineCoursesAPI = () => {
         <OnlineCoursesApiFeatures />
         <OnlineCoursesApiTechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

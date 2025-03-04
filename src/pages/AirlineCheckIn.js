@@ -6,6 +6,7 @@ import AirlineCheckInTechnologies from "@/components/projects/AirlineCheckIn/Air
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import AirlineCheckInImages from "@/components/projects/AirlineCheckIn/AirlineCheckInImages";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const AirlineCheckIn = () => {
   return (
@@ -25,6 +26,7 @@ const AirlineCheckIn = () => {
           <AirlineCheckInImages />
           <AirlineCheckInTechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );

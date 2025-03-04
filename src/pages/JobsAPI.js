@@ -5,6 +5,7 @@ import JobsAPIFeatures from "@/components/projects/JobsAPI/JobsAPIFeatures";
 import JobsAPITechnologies from "@/components/projects/JobsAPI/JobsAPITechnologies";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const JobsAPI = () => {
   return (
@@ -23,6 +24,7 @@ const JobsAPI = () => {
           <JobsAPIFeatures />
           <JobsAPITechnologies />
         </Layout>
+        <ScrollToTopButton />
       </main>
     </>
   );
