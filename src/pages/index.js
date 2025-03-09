@@ -20,7 +20,7 @@ export default function Home() {
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-full">
               <Image
-                src="/images/profile/dino-developer.png"
+                src="/images/profile/dev-img.png"
                 alt="CodeGef"
                 className="w-full h-auto lg:hidden md:inline-block md:w-full"
                 priority
