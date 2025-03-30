@@ -1,0 +1,54 @@
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    animation: animateCircle 40s linear infinite;
+    margin-top: 3rem;
+    --translateZ: 300px;
+}
+
+.circle span {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    transform-origin: center;
+    transform: rotateY(calc(var(--i) * 30deg)) translateZ(var(--translateZ));
+}
+
+@media (max-width: 1023px) {
+    .circle {
+        --translateZ: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .circle {
+        --translateZ: 200px;
+    }
+}
+
+@media (max-width: 639px) {
+    .circle {
+        --translateZ: 150px;
+    }
+}
+
+@media (max-width: 479px) {
+    .circle {
+        --translateZ: 100px;
+    }
+}
+
+@keyframes animateCircle {
+    from {
+        transform: perspective(1000px) rotateY(0deg) rotateX(15deg) translateY(-30px);
+    }
+    to {
+        transform: perspective(1000px) rotateY(360deg) rotateX(15deg) translateY(-30px);
+    }
+}

@@ -3,7 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
 import Image from "next/image";
-import experiencePhoto from "../../public/images/profile/iron-man-working.jpeg";
+import experiencePhoto from "../../public/images/profile/experience-logo.png";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
