@@ -3,7 +3,7 @@ import { motion, useScroll } from 'framer-motion'
 import { useRef } from 'react'
 import LiIcon from './LiIcon'
 import Image from 'next/image'
-import educationPhoto from '../../public/images/profile/robot-dev.png'
+import educationPhoto from '../../public/images/profile/education-logo.png'
 
 const Details = ({ career, institution, insitutionLink, time, address, description }) => {
     const ref = useRef(null);
@@ -38,7 +38,7 @@ const Education = () => {
                 <Image 
                 src={educationPhoto} 
                 alt='education' 
-                className='mx-auto h-auto'
+                className='mx-auto h-auto mb-8'
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
