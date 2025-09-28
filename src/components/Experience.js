@@ -67,6 +67,14 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
+            position="Junior Programmer"
+            company="Newport Capital SAC"
+            companyLink="https://www.linkedin.com/company/newport-capital-casinos/"
+            time="April 2025 - September 2025"
+            address="San Isidro, Lima, Peru"
+            work="I added improvements to the casino's customer management system using Angular, NestJS, and SQL Server. I enhanced the interface for the casino’s meal planning form using the same technologies. Additionally, I developed an application to manage employee access for the company and resolved issues in the petty cash system and the supplier portal."
+          />
+          <Details
             position="Junior Full Stack Web Developer"
             company="KUALI.AI"
             companyLink="https://www.kuali.ai/"
