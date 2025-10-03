@@ -72,23 +72,31 @@ const Experience = () => {
             companyLink="https://www.linkedin.com/company/newport-capital-casinos/"
             time="April 2025 - September 2025"
             address="San Isidro, Lima, Peru"
-            work="I added improvements to the casino's customer management system using Angular, NestJS, and SQL Server. I enhanced the interface for the casino’s meal planning form using the same technologies. Additionally, I developed an application to manage employee access for the company and resolved issues in the petty cash system and the supplier portal."
+            work={`Enhanced the casino's customer management system using Angular, NestJS, and SQL Server by centralizing 
+                  the platform across all casino branches. Unified the customer registration process for multi-site usage and 
+                  updated the membership card affiliation module, improving both user experience and operational efficiency.
+                  Improved the planning form interface for casino menus with Angular, NestJS, and SQL Server, automating the 
+                  planning workflow through the use of templates. This made the application more intuitive and faster, improving 
+                  organization and significantly reducing the time required to create planning schedules.
+                  Developed an access control application with Angular and NestJS to keep employee records and job positions updated, 
+                  automatically removing inactive staff and preventing errors in workforce management.
+                  Resolved issues in the petty cash system, enhancing the budget generation logic according to the Accounting and 
+                  Finance department's rules. Additionally, in the supplier portal, optimized the warnings and alerts system to provide 
+                  clearer and more timely information to users, using C# and ASP.NET Core.`}
           />
           <Details
             position="Junior Full Stack Web Developer"
             company="KUALI.AI"
             companyLink="https://www.kuali.ai/"
-            time="September 2024 - February 2025"
+            time="January 2024 - February 2025"
             address="Miraflores, Lima, Peru"
-            work="I developed, along with a team of two people, a desktop application in Python using Tkinter, which we later adapted into a web version using React and Django REST Framework. The application, created for the Kuali BPO team, streamlines the generation of product templates, specifications, and images for VTEX. It enables image downloading, cropping, and resizing, as well as converting HTML descriptions into plain text, generating keywords, and creating descriptions using OpenAI, enhancing and speeding up content management on the platform."
-          />
-          <Details
-            position="Marketplace Content and SKU Assistant"
-            company="KUALI.AI"
-            companyLink="https://www.kuali.ai/"
-            time="January 2024 - September 2024"
-            address="Miraflores, Lima, Peru"
-            work="Responsible for analyzing, reviewing, and managing content KPIs while ensuring the proper execution of commercial activities in collaboration with the ecommerce's executives. Managed the coding, description, categorization, and daily upload of content images for 100 SKUs across various product categories. Additionally, I reviewed and approved products created by sellers, ensuring continuous improvement in ecommerce content."
+            work={`I developed an MVP in Python (Tkinter) to optimize content uploading on the VTEX e-commerce platform, 
+                  achieving greater efficiency and reduced processing time through reusable templates.
+                  Subsequently, I evolved the solution into a scalable web production environment using JavaScript (React), 
+                  Python (Django REST Framework), Celery, LangChain, Redis, PostgreSQL, OpenAI API, Docker, and Nginx. 
+                  I designed an API and an interactive interface that significantly improved the workflow of the Content and SKU team.
+                  I uploaded and optimized product content using VTEX, MS Excel, and Illustrator. Additionally, I used Selenium and 
+                  BeautifulSoup to automate data extraction and processing tasks, streamlining repetitive workflows and reducing operational time.`}
           />
           <Details
             position="Telecommunications Engineering Intern"
@@ -96,7 +104,10 @@ const Experience = () => {
             companyLink="https://www.isat.com.pe/"
             time="June 2023 - January 2024"
             address="Lima, Peru"
-            work="Responsible for reparation of final reports and TSS (Technical Site Survey) for Claro Peru's mobile telephony projects."
+            work={`I prepared final reports and TSS (Technical Site Survey) documents for mobile telephony projects at Claro Perú, 
+                  focusing on Node B equipment installations and telecommunications sites.
+                  I generated technical and photographic reports for 5G, 4G LTE, 3G UMTS, and 2GSM networks, gaining knowledge in cells, 
+                  nodes, and operational processes related to the planning and installation of telecommunications infrastructure.`}
           />
         </ul>
       </div>
