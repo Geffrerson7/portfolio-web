@@ -67,7 +67,7 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Junior Programmer"
+            position="Full Stack Programmer"
             company="Newport Capital SAC"
             companyLink="https://www.linkedin.com/company/newport-capital-casinos/"
             time="April 2025 - September 2025"
